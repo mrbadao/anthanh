@@ -1,0 +1,333 @@
+@font-face {
+	font-family: 'UTM_Bebas'; /*a name to be used later*/
+	src: url('/site/fonts/UTM Bebas.ttf'); /*URL to font*/
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #555;
+	font: normal 10pt Arial,Helvetica,sans-serif;
+	background: #EFEFEF;
+}
+
+#page
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: white;
+	border: 1px solid #06C; /*#C9E0ED;*/
+}
+
+#header
+{
+	margin: 0;
+	padding: 0;
+	border-top: 3px solid #06C;
+	background: #06C;
+}
+
+#carousel-example-generic{
+	width: 840px;
+	height: 422px;
+	float: left;
+	overflow: hidden;
+	top: 10px;
+	left: 10px;
+}
+
+.slide {
+	width: 1160px;
+	position: relative;
+}
+
+.slide-image {
+	width: 100%;
+}
+
+.slide .slide-right{
+	height: 350px;
+	width: 320px;
+/*	background: #000000;*/
+	float: left;
+	padding: 10px;
+	position: relative;
+	left: 10px;
+}
+
+.slide .slide-right .news-place{
+	padding: 0;
+	margin: 0;
+	height: 180px;
+	position: relative;
+}
+
+.slide-right .title-global {
+	position: relative;
+	margin-bottom: 10px;
+	font-weight: bold;
+	line-height: 30px;
+	background: linear-gradient(to bottom, #2AB5FE 0%, #24A9F5 21%, #0B7BD4 73%, #0169C7 100%) repeat scroll 0% 0% transparent;
+	padding: 5px 0px;
+	height: 33px;
+}
+
+.title-global img{
+	position: relative;
+	float: left;
+	left: 5px;
+	top: 0px;
+}
+
+.title-global h3{
+	font-size: 22px;
+	color: #FFF;
+	text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.46);
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	top: 2px;
+	font-family: UTM_Bebas;
+	line-height: 15px;
+	position: relative;
+	bottom: 2px;
+}
+
+.slide .slide-right .news-place .news-name a{
+	font-size: 15px;
+	color: #111;
+	font-weight: bold;
+}
+
+.slide .slide-right .news-place .news-image{
+	font-size: 16px;
+	color: #111;
+	font-weight: bold;
+	float: left;
+	width: 105px;
+	height: 95px;
+	margin-right: 5px;
+}
+
+.slide .slide-right .news-place .news-desc{
+	font-size: 16px;
+	color: #111;
+	margin-top: -3px;
+	width: 190px;
+	height: 95px;
+	float: left;
+	overflow: hidden;
+}
+
+
+
+#content
+{
+    padding: 20px;
+	clear: both;
+}
+
+#sidebar
+{
+	padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+	/*padding: 10px;*/
+	/*margin: 10px 20px;*/
+	font-size: 0.8em;
+	height: 162px;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+
+#logo
+{
+	padding: 10px 20px;
+	font-size: 200%;
+}
+
+#mainmenu
+{
+	background:white url('../images/site/nav-bg.png') repeat-x left top;
+	/*background: linear-gradient(to bottom, #2AB5FE 0%, #24A9F5 21%, #0B7BD4 73%, #0169C7 100%) repeat scroll 0% 0% transparent;
+	height: 30px;*/
+}
+
+#mainmenu ul
+{
+	padding:6px 20px 5px 20px;
+	margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+}
+
+#mainmenu ul li a
+{
+	color:#ffffff;
+	background-color:transparent;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #6399cd;
+	background-color:#ffffff;
+	text-decoration:none;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #B7D6E7;
+	border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #298dcd;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #0066A4;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #0066A4;
+}
+
+.operations li a:hover
+{
+	background: #80CFFF;
+}

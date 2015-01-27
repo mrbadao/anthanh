@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <meta name='viewport' content='width=1190'/>
+
+    <!-- CSS framework -->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print"/>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection"/>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/coin-slider-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css"/>
+    <!--link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/shop-homepage.css"/-->
+
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css"/>
+
+    <title>${this/title} - ${params/appName}</title>
+</head>
+<style>
+    body{
+        background: #06C;
+    }
+</style>
+<body>
+<div class="container" id="page" style="padding: 0;">
+
+    <div id="header">
+        <!--div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div-->
+        <img src="/site/images/site/logo.png" alt="Logo" width="950"/>
+
+    </div><!-- header -->
+
+    <div id="mainmenu" tal:content="structure php:this.widget('zii.widgets.CMenu',this.menu,true)"></div>
+
+    <!-- mainmenu -->
+
+
+
+    <div class="slide">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="slide-image" src="${params/siteUrl}/images/upload/3088080.jpg" alt="" style="height: 422px;"/>
+                </div>
+                <div class="item">
+                    <img class="slide-image" src="${params/siteUrl}/images/upload/3088081.jpg" alt="" style="height: 422px;"/>
+                </div>
+                <div class="item">
+                    <img class="slide-image" src="${params/siteUrl}/images/upload/3088083.jpg" alt="" style="height: 422px;"/>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <!--slider-->
+
+        <div class="slide-right">
+            <div class="news-place">
+                <div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Tin tức nổi bật</h3></div>
+                <div class="content">
+                    <div class="news-name">
+                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong năm tháng cuối năm">Bất động sản có hy vọng trong năm tháng cuối năm</a>
+                    </div>
+                    <div class="news-image">
+                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong 5 tháng cuối năm"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" class="img-responsive" alt="Bất động sản có hy vọng trong 5 tháng cuối năm"/></a>
+                    </div>
+                    <div class="news-desc">
+                        Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...					</div>
+
+                </div>
+            </div>
+            <!--news-->
+
+
+
+            <div class="project-place">
+                <div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Dự án nổi bật</h3></div>
+                <div class="content">
+                    <div id='coin-slider'>
+                        <a href="${params/siteUrl}/images/upload/3088083.jpg">
+                            <img src='${params/siteUrl}/images/upload/08835070_400x300.jpg' style="width: 300px; height: 150px;"/>
+                            <span>
+                                CĂN HỘ VISTA VERDE
+                            </span>
+                        </a>
+                        <a href="imgN_url">
+                            <img src='${params/siteUrl}/images/upload/81818169_400x300.jpg' style="width: 300px; height: 150px;"/>
+                            <span>
+                                BÁN CĂN HỘ VISTA VERDE QUẬN 2
+                            </span>
+                        </a>
+                        <a href="imgN_url">
+                            <img src='${params/siteUrl}/images/upload/82902775_400x300.jpg' style="width: 300px; height: 150px;"/>
+                            <span>
+                                BÁN CĂN HÔ THE ASCENT
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <tal:block tal:content="structure content"/>
+
+    <div class="clear"></div>
+
+    <div id="footer" style="background: url('${params/siteUrl}/images/site/footer.jpg');">
+        Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+        All Rights Reserved.<br/>
+
+        <!--?php echo Yii::powered(); ?-->
+    </div><!-- footer -->
+
+</div><!-- page -->
+
+<!-- jQuery Version 1.11.0 -->
+<script src="${params/siteUrl}/js/jquery-1.11.0.js"></script>
+
+<!-- coin-slider -->
+<script src="${params/siteUrl}/js/coin-slider.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#coin-slider').coinslider({ width: 320, height:200, navigation: false, delay: 2000,effect: 'random' });
+    });
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="${params/siteUrl}/js/bootstrap.min.js"></script>
+
+</body>
+</html>
