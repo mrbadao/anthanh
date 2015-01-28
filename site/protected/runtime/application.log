@@ -2559,3 +2559,238 @@ HTTP_REFERER=http://anthanh.dev/site/index.php?r=site/login
 ---
 2015/01/28 04:39:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'anthanh.sdf' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `sdf`.
 in C:\wamp\www\anthanh\site\index.php (12)
+2015/01/28 05:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?r=site/page&view=about
+---
+2015/01/28 05:35:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/anthanh/site/
+---
+2015/01/28 05:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?img=gifLogo
+HTTP_REFERER=http://localhost/anthanh/site/content
+---
+2015/01/28 05:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?img=pngWrench
+HTTP_REFERER=http://localhost/anthanh/site/content
+---
+2015/01/28 05:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?img=pngPlugin
+HTTP_REFERER=http://localhost/anthanh/site/content
+---
+2015/01/28 05:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?img=pngFolderGo
+HTTP_REFERER=http://localhost/anthanh/site/content
+---
+2015/01/28 05:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?img=pngFolder
+HTTP_REFERER=http://localhost/anthanh/site/content
+---
+2015/01/28 05:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/anthanh/site/
+---
+2015/01/28 05:35:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php?r=content
+---
+2015/01/28 05:38:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ContentController".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/
+---
+2015/01/28 05:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ContentController/actionIndex".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/
+---
+2015/01/28 05:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ContentController/actionIndex".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/
+---
+2015/01/28 05:39:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ContentController/index".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/
+---
+2015/01/28 05:40:05 [error] [exception.CException] exception 'CException' with message 'ContentController cannot find the requested view "index".' in C:\wamp\www\anthanh\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\wamp\www\anthanh\site\protected\controllers\ContentController.php(34): CController->render('index')
+#2 C:\wamp\www\anthanh\framework\web\actions\CInlineAction.php(49): ContentController->actionIndex()
+#3 C:\wamp\www\anthanh\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\anthanh\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\anthanh\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\anthanh\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/anthanh/site/
+---
+2015/01/28 05:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/page".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php/site/page?view=about
+HTTP_REFERER=http://localhost/anthanh/site/
+---
+2015/01/28 05:41:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/contact".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/index.php/site/contact
+HTTP_REFERER=http://localhost/anthanh/site/
+---
+2015/01/28 05:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:48:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\wamp\www\anthanh\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\wamp\www\anthanh\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('content/about')
+#3 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/anthanh/site/content/about
+---
+2015/01/28 05:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:49:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/site/index
+HTTP_REFERER=http://localhost/anthanh/site/content/index
+---
