@@ -19,19 +19,22 @@ class Controller extends CController
 	{
 //		$this->userName = Yii::app()->user->getName();
 		$this->setTitle(Yii::app()->params['appName']);
-
+		$categories = ContentCategories::model()->findAll();
+		foreach($categories as $category){
+			$this->menu['items'][] = array('label'=>$category->title, 'url'=> array($category->abbr_cd));
+		}
 		//$this->viewPath = substr($viewPath,strpos($viewPath,'/protected'));
 //            $this->action = $this->action->id;
 //            Helpers::setSessionSiteId(1);
 
-		$this->menu['items'] = array(
-			array('label'=>'Trang chủ', 'url'=>array('/site/index')),
-			array('label'=>'Giới thiệu', 'url'=>array('/site/page', 'view'=>'about')),
-			array('label'=>'Liên hệ', 'url'=>array('/site/contact')),
-			array('label'=>'Dự án', 'url'=>array('/site/login')),
-			array('label'=>'Giao dịch', 'url'=>array('/site/login')),
-
-		);
+//		$this->menu['items'] = array(
+//			array('label'=>'Trang chủ', 'url'=>array('/site/index')),
+//			array('label'=>'Giới thiệu', 'url'=>array('/site/page', 'view'=>'about')),
+//			array('label'=>'Liên hệ', 'url'=>array('/site/contact')),
+//			array('label'=>'Dự án', 'url'=>array('/site/login')),
+//			array('label'=>'Giao dịch', 'url'=>array('/site/login')),
+//
+//		);
 	}
 
 	/**

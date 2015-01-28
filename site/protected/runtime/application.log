@@ -2794,3 +2794,157 @@ Stack trace:
 REQUEST_URI=/anthanh/site/site/index
 HTTP_REFERER=http://localhost/anthanh/site/content/index
 ---
+2015/01/28 05:57:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:57:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.woff
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in C:\wamp\www\anthanh\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('fonts/glyphicon...')
+#1 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/anthanh/site/fonts/glyphicons-halflings-regular.ttf
+HTTP_REFERER=http://localhost/anthanh/site/css/bootstrap.min.css
+---
+2015/01/28 05:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\anthanh\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\anthanh\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\wamp\www\anthanh\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\wamp\www\anthanh\framework\web\CWebApplication.php(141): CWebApplication->runController('content/index.p...')
+#3 C:\wamp\www\anthanh\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\wamp\www\anthanh\site\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/anthanh/site/content/index.php
+---
