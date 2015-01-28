@@ -29,11 +29,11 @@ CREATE TABLE `content_categories` (
   `date_created` datetime DEFAULT NULL,
   `date_modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `content_categories` */
 
-insert  into `content_categories`(`id`,`name`,`title`,`abbr_cd`,`description`,`date_created`,`date_modified`) values (1,'','Trang Chủ','',NULL,NULL,NULL);
+insert  into `content_categories`(`id`,`name`,`title`,`abbr_cd`,`description`,`date_created`,`date_modified`) values (1,'home','Trang Chủ','/',NULL,'2015-01-28 13:07:06','2015-01-28 13:07:10'),(2,'about','Giới thiệu','/content/about',NULL,'2015-01-28 13:07:13','2015-01-28 13:07:15'),(3,'contact','Liên hệ','/content/contact',NULL,NULL,NULL),(4,'','','',NULL,NULL,NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

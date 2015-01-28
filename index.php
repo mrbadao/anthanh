@@ -6,7 +6,7 @@ if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
 }
 $uri .= $_SERVER['HTTP_HOST'];
 
-header('Location: '.$uri.'/anthanh/site');
+header('Location: '.$uri.'/site');
     //header('Location: '.$uri.'/yourproject/');
 
     exit;

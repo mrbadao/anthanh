@@ -90,6 +90,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 		'appName' => 'An Thạnh',
-		'siteUrl' => 'http://localhost/anthanh/site',
+		'siteUrl' => '/site',
 	),
 );
