@@ -5,11 +5,8 @@
     RewriteEngine On
     RewriteBase /
 
-
-
-    # ディレクトリ名やファイル名が実在する場合は変換を行いません。
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    # それ以外の場合は、index.phpへ進みます。
+
     RewriteRule . index.php
 </IfModule>

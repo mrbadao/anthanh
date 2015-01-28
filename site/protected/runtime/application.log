@@ -2557,3 +2557,5 @@ Stack trace:
 REQUEST_URI=/site/index.php?r=site/index
 HTTP_REFERER=http://anthanh.dev/site/index.php?r=site/login
 ---
+2015/01/28 04:39:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'anthanh.sdf' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `sdf`.
+in C:\wamp\www\anthanh\site\index.php (12)
