@@ -118,7 +118,9 @@
     </div>
 
     <div id="main-content">
-        <tal:block tal:content="structure php:this.widget('zii.widgets.CBreadcrumbs',array('links'=>this.breadcrumbs),true)"/>
+        <tal:block tal:replace="structure php:this.widget('zii.widgets.CBreadcrumbs',array('links'=>this.breadcrumbs),true)">
+            <div class="breadcrumbs"></div>
+        </tal:block>
         <tal:block tal:content="structure content"/>
         <div id="main-sidebar">
             <div class="box-item-sidebar">
@@ -128,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="box-item-sidebar">
+            <div class="box-item-sidebar" style="top: 20px;">
                 <div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Dự án  nổi bật</h3></div>
                 <div class="content" style="clear: both;">
                     <div class="news-name">
@@ -168,21 +170,17 @@
 
             </div>
 
-            <div class="box-item-sidebar" style="clear: both;">
+            <div class="box-item-sidebar" style="clear: both; top: 50px; ">
                 <div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Hỗ trợ trực tuyến</h3></div>
                 <div class="content" style="clear: both;">
-                    <div class="news-name">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong năm tháng cuối năm">Bất động sản có hy vọng trong năm tháng cuối năm</a>
+                    <div>
+                        <img src="${params/siteUrl}/images/site/hotline.png" alt="Hotline"/>
                     </div>
-                    <div class="news-image">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong 5 tháng cuối năm"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" class="img-responsive" alt="Bất động sản có hy vọng trong 5 tháng cuối năm"/></a>
+                    <div style="position: relative; text-align: center; width: 100%; margin-left: auto; margin-right: auto;">
+                        <img src="${params/siteUrl}/images/site/skype.png" alt="skype" width="40"/>
+                        <span style="font-size: 19px; padding-left: 5px;"><a href="skype:asv-nguyenchihieu?call" style="text-decoration: none;">asv-nguyenchihieu</a></span>
                     </div>
-                    <div class="news-desc">
-                        Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...					</div>
-
                 </div>
-
-
             </div>
 
         </div>
@@ -190,9 +188,28 @@
 
     <div class="clear"></div>
 
-    <div id="footer" style="background: url('${params/siteUrl}/images/site/footer.jpg');">
-        Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-        All Rights Reserved.<br/>
+    <div id="footer" style="background: url('${params/siteUrl}/images/site/footer.jpg'); position: relative; top: 60px; margin-top: 60px;">
+        <div class="l-footer">
+            <span style="font-size: 16px;">
+                <a target="_blank" href="http://www.youtube.com/everlandvn" title="Kênh Youtube Địa Ốc EVERLAND"><img alt="" style="margin-bottom: 8px; margin-top: 0px;" src="http://everlandvn.vn/themes/youtube.png"/></a>
+                <a target="_blank" href="https://twitter.com/everlandvn"><img alt="" style="margin-bottom: 8px; margin-top: 0px;" src="http://everlandvn.vn/themes/Twitter.png"/></a>
+                <a target="_blank" href="http://www.facebook.com/everlandvn.vn" title="Facebook Địa Ốc EVERLAND"><img alt="" style="margin-bottom: 8px; margin-top: 0px;" src="http://everlandvn.vn/themes/fb.png"/></a><br/>
+                Trụ sở chính: 168 đường Xô Viết Nghệ Tĩnh, Phường 21, Quận Bình Thạnh, TP.HCM<br/>
+                Tel: (08) 38404 355 - Fax: (08) 38404 667 - Email: info@everlandvn.vn<br/>
+                Hotline: Mr Trị 0936 000 515<br/>
+            </span>
+        </div>
+
+        <div class="r-footer">
+
+            <p>Bản quyền © 2013 thuộc về CÔNG TY TNHH DV ĐỊA ỐC EVERLAND</p>
+            <p>Designed by <a href="http://muabandiaoc.vn">NguyenGia</a>
+        </p><p></p>
+
+
+
+
+        </div>
 
         <!--?php echo Yii::powered(); ?-->
     </div><!-- footer -->
