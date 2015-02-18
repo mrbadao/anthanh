@@ -40,6 +40,7 @@ body
 .slide {
 	width: 1160px;
 	position: relative;
+	height: 435px;
 }
 
 .slide-image {
@@ -136,10 +137,10 @@ body
 
 #main-content
 {
-	padding-top: 20px;
 	clear: both;
-	width: 1170px;
-	position: relative;
+	width: 100%;
+	padding-top: 20px;
+	min-height: 1200px;
 }
 
 #content
@@ -156,6 +157,73 @@ body
 {
 	padding: 20px 20px 20px 0;
 	height:auto;
+}
+
+#slide-footer{
+	width: 100%;;
+	clear: both;
+	position: relative;
+	margin-top: 20px;
+}
+
+.home-title{
+	font-family: "sfueurostileregular-webfont",sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0169C7 ;
+	text-transform: uppercase;
+}
+
+#silde-footer .home-title{
+	display: block;
+	padding: 5px 20px;
+}
+
+
+#carousel {
+	width: 1168px;
+	height: 175px;
+	overflow: hidden;
+}
+
+.item-slide{
+	width: 365px;
+	padding: 10px;
+	height: 200px;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+
+.item-slide a img{
+	width: 120px;
+	height: 90px;
+	display: block;
+	float: left;
+}
+
+.item-slide h3 {
+	font-family: "sfueurostileregular-webfont",sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+	width: 220px;
+	padding: 0px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+.item-slide p{
+	font-family: "sfueurostileregular-webfont",sans-serif;
+	font-size: 12px;
+	display: block;
+	float: left;
+	width: 220px;
+	padding: 0px;
+	padding-left: 10px;
+	overflow: hidden;
 }
 
 #footer
