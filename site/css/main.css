@@ -192,7 +192,7 @@ body
 	height: 200px;
 	overflow: hidden;
 	display: block;
-	clear: both;
+	float: left;
 }
 
 .item-slide a img{
