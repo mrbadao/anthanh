@@ -1,0 +1,14 @@
+   <form id="login-form" action="" method="post">
+    <div id="loginBox">
+     <h1>管理者認証</h1>
+     <p>パスワードを入力してください。</p>
+     <p><tal:block tal:content="structure php:CHtml::error(model, 'password', array('class' => 'txtWarning'))"/></p>
+     <fieldset>
+      <label>パスワード</label>
+      <input type="password" maxlength="255" name="LoginForm[password]" class="txtbox" onblur="toggleColor(this)" onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;" />
+     </fieldset>
+     <div class="loginTable_btn">
+      <input type="submit" value="ログイン" class="btnSmall themeNormal" />
+     </div>
+    </div>
+   </form>

@@ -1,0 +1,23 @@
+<form method="post" action="" name="formSite" id="formSite" >
+    <table cellpadding="0" cellspacing="0" border="0" class="tableYoko">
+        <tr>
+            <th>Sites</th>
+            <td ><select name="site_id" id="boxSites">
+                <option value="0">選択してください</option>
+                <option tal:repeat="site sites" value="${site/site_id}" tal:content="site/site_player_setting/site_name" ></option>
+            </select></td>
+            <td class="tdYoko_btn_s1"><input class="btnTable themeNormal" name="submit_choose_site" type="button" onclick="checkChooseSite()" value="検索"/></td>
+        </tr>
+    </table>
+</form>
+<script type="text/javascript">
+
+function checkChooseSite(){
+    if($('#boxSites option:selected').val() == 0){
+        alert("サイトを選択してください。");
+    }else{
+        $( "#formSite" ).submit();
+    }
+}
+</script>
+

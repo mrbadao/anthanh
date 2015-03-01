@@ -1,0 +1,16 @@
+   <form id="login-form" action="" method="post">
+    <div id="loginBox">
+     <h1>ログイン</h1>
+     <p>パスワードを入力してください。</p>
+     <p class="txtWarning" tal:condition="iserror">
+      ログインIDまたはパスワードが正しくありません。<br/>
+     </p>
+     <fieldset>
+      <label>パスワード：</label>
+      <input type="text" maxlength="255" name="LoginForm[password]" class="txtbox" onblur="toggleColor(this)" onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;" />
+     </fieldset>
+     <div class="loginTable_btn">
+      <input type="submit" value="ログイン" class="btnSmall themeNormal" />
+     </div>
+    </div>
+   </form>
