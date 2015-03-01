@@ -2,11 +2,11 @@
     <div id="loginBox">
      <h1>Đăng nhập</h1>
      <p>Vui lòng đăng nhập bằng ID và mật khẩu</p>
-     <!--<p><tal:block tal:content="structure php:CHtml::error(model, 'username', array('class' => 'txtWarning'))"/></p>-->
-     <!--<p><tal:block tal:content="structure php:CHtml::error(model, 'password', array('class' => 'txtWarning'))"/></p>-->
+     <p><tal:block tal:content="structure php:CHtml::error(model, 'username', array('class' => 'txtWarning'))"/></p>
+     <p><tal:block tal:content="structure php:CHtml::error(model, 'password', array('class' => 'txtWarning'))"/></p>
      <fieldset>
       <label>Login ID</label>
-      <input type="text" maxlength="255" name="LoginForm[username]" class="txtbox" onblur="toggleColor(this)" onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;" value="" />
+      <input type="text" maxlength="255" name="LoginForm[username]" class="txtbox" onblur="toggleColor(this)" onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;" value="${model/username|''}" />
      </fieldset>
      <fieldset>
       <label>Mật khẩu</label>

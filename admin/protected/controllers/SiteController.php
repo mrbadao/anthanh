@@ -27,18 +27,40 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'ogin
+		if (Yii::app()->user->IsGuest) {
+			$this->redirect('site/login');
+		}
 		$this->title='CMS An Thanh';
 		$this->render('index');
 	}
 
 	public function actionLogin()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'ogin
+		if (!Yii::app()->user->IsGuest) {
+			$this->redirect('/admin/site');
+		}
+
+		$model = new LoginForm;
+		$iserror = false;
+
+
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+
+		if (isset($_POST['LoginForm'])) {
+			$model->attributes = $_POST['LoginForm'];
+			// validate user input and redirect to the previous page if valid
+			if ($model->validate() && $model->login()) {
+				$id = Yii::app()->user->id;
+				$this->redirect('/admin/site/index');
+			} else
+				$iserror = true;
+		}
+
 		$this->layout ='login';
-		$this->render('login');
+		$this->render('login', compact('model', 'iserror'));
 	}
 
 	/**

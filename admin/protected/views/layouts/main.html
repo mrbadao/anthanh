@@ -24,14 +24,14 @@
  <header>
  <nav>
   <ul>
-   <li><strong>${this/userName}さんログイン中</strong></li>
+   <li><strong>Đang đăng nhập với tài khoản ${this/userName}</strong></li>
    <li><a href="/admin/site/logout" class="btnSmall themeSub">Logout</a></li>
    <!--<li><a href="/site/adminlogin" class="btnSmall themeSub">管理者設定</a></li>-->
   </ul>
  </nav>
  <h1><a href="#"><img src="/admin/img/logo.png" alt="パーゴルフ"/></a></h1>
  </header>
- <nav id="topicPath" metal:use-macro="${this/viewPath}/${this/id}/breadcrumb.html/${this/action/id}">
+ <nav id="topicPath" metal:use-macro="${this/viewPath}/breadcrumb.html/${this/action/id}">
   <ul>
    <li class="top"><a href="#">トップ</a></li>
    <li><a href="article-list.html">記事一覧</a></li>

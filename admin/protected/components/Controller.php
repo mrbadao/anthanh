@@ -5,12 +5,20 @@
  */
 class Controller extends CController
 {
+	public $userName;
 	/**
 	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
 	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
 	 */
 	public $layout='main';
 	public $title='';
+
+	public function init()
+	{
+		$this->userName = Yii::app()->user->getName();
+		$this->setTitle(Yii::app()->params['appName']);
+	}
+
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */
@@ -21,4 +29,9 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+	public function setTitle($title)
+	{
+		$this->title = $title;
+	}
 }
