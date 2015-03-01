@@ -117,7 +117,7 @@
 
     </div>
 
-    <div id="main-content">
+    <div id="main-content" class="row">
         <tal:block tal:replace="structure php:this.widget('zii.widgets.CBreadcrumbs',array('links'=>this.breadcrumbs),true)">
             <div class="breadcrumbs"></div>
         </tal:block>
@@ -187,7 +187,7 @@
     </div>
 
     <div id="slide-footer">
-        <h2 class="home-title">Dự án đang bán</h2>
+        <h2 class="home-title" style="margin-left: 25px;">Dự án đang bán</h2>
         <div id="carousel">
             <div class="item-slide">
                 <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
@@ -210,7 +210,7 @@
                     Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
                 </p>
             </div>
-            <div class="item-slide">
+<!--            <div class="item-slide">
                 <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
                 <h3>Căn hộ The Vista An Phú</h3>
                 <p>
@@ -223,13 +223,13 @@
                 <p>
                     Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
                 </p>
-            </div>
+            </div>-->
         </div>
     </div>
 
     <div class="clear"></div>
 
-    <div id="footer" style="background: url('${params/siteUrl}/images/site/footer.jpg'); position: relative; top: 60px; margin-top: 60px;">
+    <div id="footer" style="background: url('${params/siteUrl}/images/site/footer.jpg'); position: relative; top: 15px; ">
         <div class="l-footer">
             <span style="font-size: 16px;">
                 <a target="_blank" href="http://www.youtube.com/everlandvn" title="Kênh Youtube Địa Ốc EVERLAND"><img alt="" style="margin-bottom: 8px; margin-top: 0px;" src="http://everlandvn.vn/themes/youtube.png"/></a>
@@ -275,14 +275,14 @@
 <script type="text/javascript">
     $(document).ready(function() {
         // Using default configuration
-        $('#carousel').carouFredSel({
-            width   :   "100%",
-            items   :   5,
-            scroll : {
-                items           : 1,
-                duration        : 500
-            }
-        });
+//        $('#carousel').carouFredSel({
+//            width   :   "100%",
+//            items   :   5,
+//            scroll : {
+//                items           : 1,
+//                duration        : 500
+//            }
+//        });
 
         // Using custom configuration
 //        $('#carousel').carouFredSel({
