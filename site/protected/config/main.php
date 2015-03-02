@@ -53,6 +53,7 @@ return array(
 //				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'gii/<action:\w+>'=> 'gii/<action>',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'content/view/<cat:\d+>/<id:\d+>'=>'content/view/',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),

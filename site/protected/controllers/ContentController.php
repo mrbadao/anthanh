@@ -34,6 +34,32 @@ class ContentController extends Controller
 		$this->render('index');
 	}
 
+	public function actionProject()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->setTitle('Dự án');
+		$this->render('project');
+	}
+
+
+	public function actionView(){
+		$id = isset($_GET['id']) ? $_GET['id'] : null;
+		$cat = isset($_GET['cat']) ? $_GET['cat'] : null;
+		$view = '';
+		if($cat == 1){
+			$view = 'viewnew';
+		}
+		else {
+			$view = 'viewproject';
+		}
+		$this->setTitle('Sàn giao dịch');
+		$this->breadcrumbs = array(
+			'Sàn giao dịch',
+		);
+		$this->render($view);
+	}
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */

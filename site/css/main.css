@@ -210,6 +210,7 @@ body
 	float: left;
 	border: 1px solid #CCC;
 	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+	padding: 3px;
 }
 
 .item-slide h3 {
@@ -262,6 +263,7 @@ body
 	width: 120px;
 	border: 1px solid #CCC;
 	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+	padding: 2px;
 }
 
 .top-info{
@@ -433,6 +435,7 @@ div.breadcrumbs
 	font-size: 1.2em;
 	padding: 5px 20px;
 	width: 100%;
+	margin-left: 10px;
 }
 
 div.breadcrumbs a:first-child:before {
@@ -525,4 +528,59 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.news-mess, .news-mess-header, .news-mess-detail{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+.news-mess-header{
+	margin-top: 15px;
+}
+
+.news-mess-img {
+	margin-left: 25px;
+	width: 360px;
+	float: left;
+}
+
+.news-mess-img img{
+	width: 350px;
+	height: 240px;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	transition: all 0.2s ease-in-out 0s;
+	padding: 4px;
+}
+
+.news-mess-info {
+	width: 435px;
+	float: left;
+	margin-left: 15px;
+	overflow: hidden;
+}
+
+
+.news-mess-info h4{
+	font-size: 15px;
+	font-weight: 600;
+	overflow: hidden;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.news-mess-info h4 span{
+	color: #ff0000;
+}
+
+.news-mess-detail{
+	clear: both;
+	margin-top: 20px;
+}
+
+.news-mess-detail p{
+	margin-left: 15px;
+	margin-bottom: 10px;
 }
