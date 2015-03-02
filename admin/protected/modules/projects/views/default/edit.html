@@ -1,0 +1,85 @@
+<div tal:replace="structure php:CHtml::statefulForm('','post',array('id'=>'article'))"/>
+
+
+<div tal:condition="not:exists:contents/id">
+    <h1>Thêm dự án mới</h1>
+    <article>
+        <p>
+            Dự án sẽ được thêm.<br/>
+            Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
+        </p>
+    </article>
+</div>
+<div tal:condition="exists:contents/id">
+    <h1>記事編集</h1>
+    <article>
+        <p>記事情報を編集します。必要事項を入力後、［保存］ボタンをクリックしてください。<br/>
+            編集をキャンセルする場合は［キャンセル］ボタンをクリックしてください。</p>
+    </article>
+</div>
+<aside>
+    <p>※<span class="txtWarning">*</span>Hãy nhập đầy đủ thông tin.</p>
+</aside>
+
+<div class="columnContainer">
+    <div class="tabBox">
+        <input type="hidden" name="id" value=""/>
+        <input type="hidden" name="id" value=""/>
+
+        <div class="mBoxitem_table">
+            <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                <tr>
+                    <th>Tiêu đề&nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <!--<tal:block tal:content="structure php:CHtml::error(contents,'title_'.lng)"/>-->
+                        <input type="text" maxlength="100"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Tiêu đề phụ&nbsp;<span class="txtWarning">*</span></th>
+                    <td><textarea  rows="4" cols="" class="txt_midbox ckeditor txt_en"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="mBoxitem_table">
+                <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                    <tr>
+                        <th>Nội dung</th>
+                        <td><textarea cols="" rows="6" id="input_detail_en" class="txt_bigbox ckeditor txt_en"></textarea></td>
+                    </tr>
+                </table>
+        </div>
+
+    </div>
+
+    <div class="subBox" style="margin-top: 20px;">
+
+        <h3>Trạng thái</h3>
+        <div class="optionsHolder">
+            <div tab="belongTo_box1">
+                <select  style="width: 100%">
+                    <option value="1">Đang tiến hành</option>
+                    <option value="0">Đã hoàn thành</option>
+                </select>
+            </div>
+        </div>
+
+        <h3>Loại dự án</h3>
+        <div class="optionsHolder">
+            <div tab="belongTo_box1">
+                <input type="checkbox" class="auth_member"  value="0"/> <span>Tiêu biểu</span> <br/>
+                <input type="checkbox" class="auth_member"  value="1"/> <span>Nổi bật</span> <br/>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="BtnArea">
+    <div class="BtnAreaitem">
+        <tal:block class="BtnAreaitem" tal:content="structure php:CHtml::submitButton('Save',array('name' => 'commit','class'=>'btnMiddle themeNormal'))"/>
+        <input class="btnMiddle themeNormal" type="button" title="Cancel" value="Cancel" onclick="javascript:cancel_edit(${contents/id|''});"/>
+    </div>
+</div>

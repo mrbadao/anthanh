@@ -31,6 +31,8 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 
+		'projects',
+
 	),
 
 	// application components
@@ -51,9 +53,17 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'rules'=>array(
+//				'gii/<action:\w+>'=> 'gii/<action>',
+//				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+//				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+//				'<module:\w+>/<action:\w+>'=>'<module>/default/<action>',
+//				'<module:\w+>/<controller:\w+>/<action:\w+>'=>'<module>/<controller>/<action>',
+				'site/<action:\w+>'=> 'site/<action>',
 				'gii/<action:\w+>'=> 'gii/<action>',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+//				'objects/<id:\d+>'=> '/objects',
+//				'objects/<id:\d+>/<size:\w+>'=> 'objects',
+				'<module:\w+>/<action:\w+>'=>'<module>/default/<action>',
+				'<module:\w+>/<controller:\w+>/<action:\w+>'=>'<module>/<controller>/<action>',
 			),
 		),
 
