@@ -1,7 +1,7 @@
 <div tal:replace="structure php:CHtml::statefulForm('','post',array('id'=>'article'))"/>
 
 
-<div tal:condition="not:exists:contents/id">
+<div tal:condition="not:exists:contentProject/id">
     <h1>Thêm dự án mới</h1>
     <article>
         <p>
@@ -10,11 +10,13 @@
         </p>
     </article>
 </div>
-<div tal:condition="exists:contents/id">
-    <h1>記事編集</h1>
+<div tal:condition="exists:contentProject/id">
+    <h1>Chỉnh sữa dự án</h1>
     <article>
-        <p>記事情報を編集します。必要事項を入力後、［保存］ボタンをクリックしてください。<br/>
-            編集をキャンセルする場合は［キャンセル］ボタンをクリックしてください。</p>
+        <p>
+            Dự án sẽ được chỉnh sữa<br/>
+            Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
+        </p>
     </article>
 </div>
 <aside>
@@ -23,21 +25,24 @@
 
 <div class="columnContainer">
     <div class="tabBox">
-        <input type="hidden" name="id" value=""/>
-        <input type="hidden" name="id" value=""/>
+        <input type="hidden" name="project[id]" value="${contentProject/id|''}"/>
+        <input type="hidden" name="project[content_categories_id]" value="4"/>
 
         <div class="mBoxitem_table">
             <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
                 <tr>
                     <th>Tiêu đề&nbsp;<span class="txtWarning">*</span></th>
                     <td>
-                        <!--<tal:block tal:content="structure php:CHtml::error(contents,'title_'.lng)"/>-->
-                        <input type="text" maxlength="100"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                        <tal:block tal:content="structure php:CHtml::error(contentProject,'title')"/>
+                        <input type="text" name="project[title]" maxlength="100" value="${contentProject/title|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
                     </td>
                 </tr>
                 <tr>
                     <th>Tiêu đề phụ&nbsp;<span class="txtWarning">*</span></th>
-                    <td><textarea  rows="4" cols="" class="txt_midbox ckeditor txt_en"></textarea></td>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentProject,'sub_title')"/>
+                        <textarea name="project[sub_title]" rows="4" cols="" class="txt_midbox txt_en">${contentProject/sub_title|''}</textarea>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -46,7 +51,7 @@
                 <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
                     <tr>
                         <th>Nội dung</th>
-                        <td><textarea cols="" rows="6" id="input_detail_en" class="txt_bigbox ckeditor txt_en"></textarea></td>
+                        <td><textarea name="project[detail]" cols="" rows="6" id="input_detail_en" class="txt_bigbox ckeditor txt_en">${contentProject/detail|''}</textarea></td>
                     </tr>
                 </table>
         </div>
@@ -58,9 +63,9 @@
         <h3>Trạng thái</h3>
         <div class="optionsHolder">
             <div tab="belongTo_box1">
-                <select  style="width: 100%">
-                    <option value="1">Đang tiến hành</option>
-                    <option value="0">Đã hoàn thành</option>
+                <select name="project[status]"   style="width: 100%">
+                    <option value="1" tal:attributes="selected php:contentProject['status'] EQ 1 ? 'selected' : '' ">Đang tiến hành</option>
+                    <option value="0" tal:attributes="selected php:contentProject['status'] EQ 0 ? 'selected' : '' ">Đã hoàn thành</option>
                 </select>
             </div>
         </div>
@@ -68,8 +73,8 @@
         <h3>Loại dự án</h3>
         <div class="optionsHolder">
             <div tab="belongTo_box1">
-                <input type="checkbox" class="auth_member"  value="0"/> <span>Tiêu biểu</span> <br/>
-                <input type="checkbox" class="auth_member"  value="1"/> <span>Nổi bật</span> <br/>
+                <input type="checkbox" tal:attributes="checked php:contentProject['pr'] EQ 1 ? 'checked' : '' " name="project[pr]" class="auth_member"  value="1"/> <span>Tiêu biểu</span> <br/>
+                <input type="checkbox" tal:attributes="checked php:contentProject['highline'] EQ 1 ? 'checked' : '' " name="project[highline]" class="auth_member"  value="1"/> <span>Nổi bật</span> <br/>
             </div>
         </div>
 

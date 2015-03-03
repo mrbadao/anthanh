@@ -1,30 +1,28 @@
 <nav id="topicPath" metal:define-macro="index">
-  <ul>
-   <li class="top"><a href="/admin/">Home</a></li>
-   <li>Thêm dự án</li>
-  </ul>
- </nav>
+    <ul>
+        <li class="top"><a href="/admin/">Home</a></li>
+        <li>Quản lí dựa án</li>
+    </ul>
+</nav>
+<nav id="topicPath" metal:define-macro="search">
+    <ul>
+        <li class="top"><a href="/admin/">Home</a></li>
+        <li ><a href="/admin/project/">Danh sách dự án</a></li>
+        <li>Timf kiếm</li>
+    </ul>
+</nav>
 <nav id="topicPath" metal:define-macro="view">
   <ul>
-   <li class="top"><a href="/admin/">トップ</a></li>
-   <li><a href="/customer">会員一覧</a></li>
-   <li>会員詳細</li>
+      <li class="top"><a href="/admin/">Home</a></li>
+      <li ><a href="/admin/project/">Danh sách dự án</a></li>
+      <li >Chi tiết</li>
   </ul>
  </nav>
 <nav id="topicPath" metal:define-macro="edit">
-  <ul>
-   <li class="top"><a href="/admin/">トップ</a></li>
-   <li ><a href="/customer">会員一覧</a></li>
-   <li ><a href="/customer/view">会員詳細</a></li>
-   <li >会員新規登録</li>
-   <li >会員編集</li>
-  </ul>
- </nav>
-<nav id="topicPath" metal:define-macro="password">
-  <ul>
-   <li class="top"><a href="/">トップ</a></li>
-   <li><a href="/customer">会員一覧</a></li>
-   <li ><a href="/customer/view">会員詳細</a></li>
-   <li>パスワード編集</li>
-  </ul>
- </nav>
+    <ul>
+        <li class="top"><a href="/admin/">Home</a></li>
+        <li ><a href="/admin/project/">Danh sách dự án</a></li>
+        <li tal:condition="exists:contentProject/id"><a  href="/admin/project/view?id=${contentProject/id}">Chi tiết</a></li>
+        <li tal:condition="not: exists:contentProject/id">Thêm mới dự án</li>
+    </ul>
+</nav>

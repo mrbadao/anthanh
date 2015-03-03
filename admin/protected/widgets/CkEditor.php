@@ -1,9 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ho
- * Date: 11/21/2014
- * Time: 11:12 AM
+ * User: mrBadao
  */
 class CkEditor extends CWidget
 {

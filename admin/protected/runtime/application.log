@@ -1998,3 +1998,1174 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/admin/projects/edit
 ---
+2015/03/03 20:36:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/03 21:45:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/widgets/Menu.php:14
+Stack trace:
+#0 /var/www/anthanh/framework/web/CBaseController.php(169): Menu->run()
+#1 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(80): CBaseController->widget('application.wid...', Array, true)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(33): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(14): Controller->render('edit')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/edit
+HTTP_REFERER=http://anthanh.dev/admin/site/index
+---
+2015/03/03 21:46:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/widgets/Menu.php:14
+Stack trace:
+#0 /var/www/anthanh/framework/web/CBaseController.php(169): Menu->run()
+#1 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(80): CBaseController->widget('application.wid...', Array, true)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(33): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(14): Controller->render('edit')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/edit
+---
+2015/03/03 21:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/03 22:00:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ckplugin/ckeditor/config.js".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('ckplugin/ckedit...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ckplugin/ckeditor/config.js?t=F0RD
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/03 22:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ckplugin/ckeditor/skins/moono/editor_gecko.css".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('ckplugin/ckedit...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ckplugin/ckeditor/skins/moono/editor_gecko.css?t=F0RD
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/03 22:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ckplugin/ckeditor/lang/en.js".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('ckplugin/ckedit...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ckplugin/ckeditor/lang/en.js?t=F0RD
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/03 22:32:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ckplugina/ckeditor/ckeditor.js".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('ckplugina/ckedi...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ckplugina/ckeditor/ckeditor.js
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/03 22:54:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ckplugin/ckeditor/plugins/UploadImage/plugin.js".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('ckplugin/ckedit...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/ckplugin/ckeditor/plugins/UploadImage/plugin.js?t=F0RD
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/03 23:30:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "gii/login".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/gii/login
+---
+2015/03/03 23:32:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "gii/login".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/gii/login
+---
+2015/03/03 23:32:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "gii/login".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/gii/login
+---
+2015/03/03 23:36:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/03 23:47:29 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'contentProject' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/edit.html:34
+Stack trace:
+#0 /tmp/tpl_54f5e58c_edit___LoEAcm_3pRwHPexvuIlSg.php(75): PHPTAL_Context->__get('contentProject')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f5e58c_edit___LoEAcm_3pRwHPexvuIlSg(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', 'contentProject', true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', 'contentProject', true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('edit', 'contentProject', true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(31): Controller->render('edit', 'contentProject')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/edit
+---
+2015/03/03 23:48:34 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:25)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:48:59 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:25)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:49:16 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:25)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:49:27 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:25)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:51:25 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:26)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (26)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:56:58 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:25)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:57:25 [error] [php] Creating default object from empty value (/var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php:25)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#1 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/03 23:58:17 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.attrbutes" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('attrbutes')
+#1 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(26): CActiveRecord->__get('attrbutes')
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/projects/edit
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/04 00:09:34 [error] [php] Missing argument 2 for CActiveRecord::setAttribute(), called in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php on line 25 and defined (/var/www/anthanh/framework/db/ar/CActiveRecord.php:710)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:09:49 [error] [php] Missing argument 2 for CActiveRecord::setAttribute(), called in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php on line 25 and defined (/var/www/anthanh/framework/db/ar/CActiveRecord.php:710)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:10:30 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:10:30 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:10:30 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:10:35 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:10:35 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:10:35 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (25)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:15:45 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'checked php:contentProject['pr'] EQ 1 ? 'checked' : ''', expected variable name. Complex expressions need php: modifier.' in /var/www/anthanh/admin/protected/modules/projects/views/default/edit.html:74
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('checked php:con...', false)
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, 'checked php:con...', false)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', 'checked php:con...', false)
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('checked php:con...', false)
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('checked php:con...')
+#5 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Condition.php(41): PHPTAL_Php_CodeWriter->evaluateExpression('checked php:con...')
+#6 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(355): PHPTAL_Php_Attribute_TAL_Condition->before(Object(PHPTAL_Php_CodeWriter))
+#7 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(206): PHPTAL_Dom_Element->generateSurroundHead(Object(PHPTAL_Php_CodeWriter))
+#8 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54f5ec40_ed...', Object(PHPTAL_Dom_Element))
+#20 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#21 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#22 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#23 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#24 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#25 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('edit', Array, true)
+#26 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(36): Controller->render('edit', Array)
+#27 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#28 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#29 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#30 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#32 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#33 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#34 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#35 {main}
+REQUEST_URI=/admin/projects/edit?id=1
+---
+2015/03/04 00:16:56 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:16:56 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:16:56 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:17:31 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:17:31 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:17:31 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:19:02 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:19:02 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:19:02 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:19:11 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:19:11 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:19:11 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:27:23 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'not exists:contentProject/id', expected 'not exists:contentProject' to be variable name' in /var/www/anthanh/admin/protected/views/layouts/main.html:34
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('not exists:cont...', false)
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, 'not exists:cont...', false)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', 'not exists:cont...', false)
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('not exists:cont...', false)
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('not exists:cont...')
+#5 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Condition.php(41): PHPTAL_Php_CodeWriter->evaluateExpression('not exists:cont...')
+#6 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(355): PHPTAL_Php_Attribute_TAL_Condition->before(Object(PHPTAL_Php_CodeWriter))
+#7 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(206): PHPTAL_Dom_Element->generateSurroundHead(Object(PHPTAL_Php_CodeWriter))
+#8 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54f5eef4_br...', Object(PHPTAL_Dom_Element))
+#18 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#19 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(770): PHPTAL->prepare()
+#20 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(73): PHPTAL->_executeMacroOfTemplate('/var/www/anthan...', Object(PHPTAL))
+#21 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#22 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#23 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#24 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#25 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(36): Controller->render('edit', Array)
+#26 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#27 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#28 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#29 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#31 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#32 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#33 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/admin/projects/edit?id=1
+---
+2015/03/04 00:27:35 [error] [exception.PHPTAL_UnknownModifierException] exception 'PHPTAL_UnknownModifierException' with message 'Unknown phptal modifier 'notexists'. Function 'PHPTALNAMESPACE\phptal_tales_notexists' does not exist' in /var/www/anthanh/admin/protected/views/layouts/main.html:34
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('notexists', 'contentProject/...', false)
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('notexists:conte...', false)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('notexists:conte...')
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Condition.php(41): PHPTAL_Php_CodeWriter->evaluateExpression('notexists:conte...')
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(355): PHPTAL_Php_Attribute_TAL_Condition->before(Object(PHPTAL_Php_CodeWriter))
+#5 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(206): PHPTAL_Dom_Element->generateSurroundHead(Object(PHPTAL_Php_CodeWriter))
+#6 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#7 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#8 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54f5ef06_br...', Object(PHPTAL_Dom_Element))
+#16 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#17 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(770): PHPTAL->prepare()
+#18 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(73): PHPTAL->_executeMacroOfTemplate('/var/www/anthan...', Object(PHPTAL))
+#19 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#20 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#21 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#22 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#23 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(36): Controller->render('edit', Array)
+#24 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#25 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#26 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#27 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#29 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#30 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#31 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/projects/edit?id=1
+---
+2015/03/04 00:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "project".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('project')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/project/
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=1
+---
+2015/03/04 00:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "project/default/index".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('project/default...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/project/index
+---
+2015/03/04 00:32:32 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:32:32 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:32:32 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (29)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:32:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "view".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=1
+---
+2015/03/04 00:36:03 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (34)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:36:03 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (34)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:36:03 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (34)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 00:36:03 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'content' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:1
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(9): PHPTAL_Context->__get('content')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=1
+---
+2015/03/04 00:36:16 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'content' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:1
+Stack trace:
+#0 /tmp/tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ.php(8): PHPTAL_Context->__get('content')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=1
+---
+2015/03/04 00:36:34 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'content' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:1
+Stack trace:
+#0 /tmp/tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ.php(8): PHPTAL_Context->__get('content')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=1
+---
+2015/03/04 00:36:36 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'content' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:1
+Stack trace:
+#0 /tmp/tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ.php(8): PHPTAL_Context->__get('content')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=1
+---
+2015/03/04 00:36:38 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'content' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:1
+Stack trace:
+#0 /tmp/tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ.php(8): PHPTAL_Context->__get('content')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_5498df90_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+---
+2015/03/04 00:36:59 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'new' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:8
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(23): PHPTAL_Context->__get('new')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f5f13a_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+---
+2015/03/04 00:38:49 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'msg' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:10
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(25): PHPTAL_Context->__get('msg')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f5f1a6_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', NULL, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(13): Controller->render('view')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+---
+2015/03/04 00:43:33 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'msg' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:10
+Stack trace:
+#0 /tmp/tpl_54f5f1a6_view__Ke6SZTlT1GJxMgNTRpOOjQ.php(24): PHPTAL_Context->__get('msg')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f5f1a6_view__Ke6SZTlT1GJxMgNTRpOOjQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(25): Controller->render('view', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+---
+2015/03/04 00:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "project".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('project')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('project')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/projects/project
+---
+2015/03/04 01:01:46 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'Đang tiến hành', expected variable name. Complex expressions need php: modifier.' in /var/www/anthanh/admin/protected/modules/projects/views/default/view.html:51
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('??ang ti???n h?...', false)
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '??ang ti???n h?...', false)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '??ang ti???n h?...', false)
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('??ang ti???n h?...', false)
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('??ang ti???n h?...')
+#5 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Content.php(40): PHPTAL_Php_CodeWriter->evaluateExpression('??ang ti???n h?...')
+#6 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(399): PHPTAL_Php_Attribute_TAL_Content->before(Object(PHPTAL_Php_CodeWriter))
+#7 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#8 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54f5f707_vi...', Object(PHPTAL_Dom_Element))
+#16 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#17 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#18 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#19 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#20 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#21 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('view', Array, true)
+#22 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(24): Controller->render('view', Array)
+#23 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#24 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#25 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#26 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#28 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#29 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#30 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/admin/projects/view?id=1&msg=1
+---
+2015/03/04 01:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "project/default/edit".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('project/default...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/project/edit?id=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=1&msg=1
+---
+2015/03/04 01:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "project/default/edit".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('project/default...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/project/edit?id=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=1&msg=1
+---
+2015/03/04 01:12:07 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:12:07 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:12:07 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:12:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "delete".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('delete')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('delete')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/projects/delete?id=1
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=1&msg=1
+---
+2015/03/04 01:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "project".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('project')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/project/
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=1
+---
+2015/03/04 01:14:21 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:14:21 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:14:21 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:15:52 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:15:52 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:15:52 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:16:48 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:16:48 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:16:48 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:17:09 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:17:09 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:17:09 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:17:49 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:17:49 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:17:49 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:04 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:04 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:04 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:11 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:11 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:11 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:29 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:29 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:18:29 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:19:51 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:19:51 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:19:51 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:20:03 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:20:03 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:20:03 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:20:25 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:20:25 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:20:25 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:22:39 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:22:39 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:22:39 [warning] [application] Failed to set unsafe attribute "detail" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:24:15 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:24:15 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:24:35 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:24:35 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:25:28 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:25:28 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:25:43 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:25:43 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:28:07 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:28:07 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (45)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/04 01:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "project".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('project')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('project')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/projects/project
+---
+2015/03/04 01:42:15 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Not all elements were closed before end of the document. Missing: </div></form>' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:31
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/SaxXmlParser.php(348): PHPTAL_Dom_PHPTALDocumentBuilder->onDocumentEnd()
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<h1>Qu???n l?? ...', '/var/www/anthan...')
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#4 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#5 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#8 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/04 01:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "search".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('search')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('search')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/projects/search
+HTTP_REFERER=http://anthanh.dev/admin/projects/
+---
+2015/03/04 01:48:06 [error] [php] Undefined index: pr (/var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code:71)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#1 /var/www/anthanh/framework/web/CController.php(869): DefaultController->renderFile()
+#2 /var/www/anthanh/admin/protected/components/Controller.php(29): DefaultController->renderPartial()
+#3 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): DefaultController->render()
+#4 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#5 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#7 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#8 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code (71)
+in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php (675)
+in /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php (47)
+2015/03/04 02:01:06 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Not all elements were closed before end of the document. Missing: </form>' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:76
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/SaxXmlParser.php(348): PHPTAL_Dom_PHPTALDocumentBuilder->onDocumentEnd()
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<h1>Qu???n l?? ...', '/var/www/anthan...')
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#4 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#5 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#8 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=3&msg=1
+---
+2015/03/04 02:02:04 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'nodata' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:37
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(108): PHPTAL_Context->__get('nodata')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f6052b_index__O9I18fWwDhFKtVjDkuSuJw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=3&msg=1
+---
+2015/03/04 02:02:15 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'nodata' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:37
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(108): PHPTAL_Context->__get('nodata')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f60536_index__O9I18fWwDhFKtVjDkuSuJw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=3&msg=1
+---
+2015/03/04 02:02:40 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'nodata' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:37
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(108): PHPTAL_Context->__get('nodata')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f6054f_index__O9I18fWwDhFKtVjDkuSuJw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=3&msg=1
+---
+2015/03/04 02:02:54 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'nodata' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:37
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(108): PHPTAL_Context->__get('nodata')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f6055d_index__O9I18fWwDhFKtVjDkuSuJw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/view?id=3&msg=1
+---
+2015/03/04 02:03:59 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'nodata' in current scope' in /var/www/anthanh/admin/protected/modules/projects/views/default/index.html:37
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(108): PHPTAL_Context->__get('nodata')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f6059e_index__O9I18fWwDhFKtVjDkuSuJw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(9): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit
+---
+2015/03/04 02:14:47 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ContentProjects object doesn't have method/property named 'id'' in /var/www/anthanh/admin/protected/modules/projects/views/default/breadcrumb.html:18
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Context.php(408): PHPTAL_Context::pathError(Object(ContentProjects), 'id', 'id')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(22): PHPTAL_Context::path(Object(ContentProjects), 'id')
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(784): tpl_54f60826_breadcrumb__7TeLJdAqSAOnzelpPNQ9bg_edit(Object(PHPTAL), Object(PHPTAL))
+#3 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(73): PHPTAL->_executeMacroOfTemplate('/var/www/anthan...', Object(PHPTAL))
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#5 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#6 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#8 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(53): Controller->render('edit', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/projects/edit
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=3
+---
+2015/03/04 02:15:04 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ContentProjects object doesn't have method/property named 'id'' in /var/www/anthanh/admin/protected/modules/projects/views/default/breadcrumb.html:18
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Context.php(408): PHPTAL_Context::pathError(Object(ContentProjects), 'id', 'id')
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(22): PHPTAL_Context::path(Object(ContentProjects), 'id')
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(784): tpl_54f60836_breadcrumb__7TeLJdAqSAOnzelpPNQ9bg_edit(Object(PHPTAL), Object(PHPTAL))
+#3 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(73): PHPTAL->_executeMacroOfTemplate('/var/www/anthan...', Object(PHPTAL))
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#5 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#6 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#8 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(53): Controller->render('edit', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/projects/edit
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=3
+---
+2015/03/04 02:15:07 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ContentProjects object doesn't have method/property named 'id'' in /var/www/anthanh/admin/protected/modules/projects/views/default/breadcrumb.html:18
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Context.php(408): PHPTAL_Context::pathError(Object(ContentProjects), 'id', 'id')
+#1 /tmp/tpl_54f60836_breadcrumb__7TeLJdAqSAOnzelpPNQ9bg.php(21): PHPTAL_Context::path(Object(ContentProjects), 'id')
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(784): tpl_54f60836_breadcrumb__7TeLJdAqSAOnzelpPNQ9bg_edit(Object(PHPTAL), Object(PHPTAL))
+#3 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(73): PHPTAL->_executeMacroOfTemplate('/var/www/anthan...', Object(PHPTAL))
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#5 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#6 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#8 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(53): Controller->render('edit', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/projects/edit
+---
+2015/03/04 02:17:57 [error] [exception.PHPTAL_TemplateException] exception 'PHPTAL_TemplateException' with message 'Macro index is defined twice' in /var/www/anthanh/admin/protected/modules/projects/views/default/breadcrumb.html:7
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(355): PHPTAL_Php_Attribute_METAL_DefineMacro->before(Object(PHPTAL_Php_CodeWriter))
+#1 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(206): PHPTAL_Dom_Element->generateSurroundHead(Object(PHPTAL_Php_CodeWriter))
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#3 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#5 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54f608e4_br...', Object(PHPTAL_Dom_Element))
+#6 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#7 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(770): PHPTAL->prepare()
+#8 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(73): PHPTAL->_executeMacroOfTemplate('/var/www/anthan...', Object(PHPTAL))
+#9 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#10 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#11 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#12 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#13 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(25): Controller->render('view', Array)
+#14 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionView()
+#15 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#19 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#20 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#21 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/admin/projects/view?id=3
+HTTP_REFERER=http://anthanh.dev/admin/projects/
+---
