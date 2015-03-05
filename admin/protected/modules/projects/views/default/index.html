@@ -12,17 +12,19 @@
             </tr>
             <tr>
                 <th>Trạng thái</th>
-                <td><select name="search[status]">
-                    <option value=""> Hãy chọn giá trị</option>
-                    <option value="1" tal:attributes="selected php:search['status'] == '1' ? 'selected' : '' ">Đang tiến hành</option>
-                    <option value="0" tal:attributes="selected php:search['status'] != '0' ? 'selected' : '' ">Đã hoàn thành</option>
-                </select></td>
+                <td>
+                    <select name="search[status]">
+                        <option value=""> Hãy chọn giá trị</option>
+                        <option value="-1" tal:attributes="selected php:search['status'] == '-1' ? 'selected' : '' ">Đang tiến hành</option>
+                        <option value="1" tal:attributes="selected php:search['status'] == '1' ? 'selected' : '' ">Đã hoàn thành</option>
+                    </select>
+                </td>
             </tr>
 
             <tr>
                 <th>Loại</th>
                 <td>
-                    <input type="checkbox" tal:attributes="checked php:search['pr'] EQ 1 ? 'checked' : '' " name="search[pr]" class="auth_member"  value="1"/> <span>Tiêu biểu</span> <br/>
+                    <input type="checkbox" tal:attributes="checked php:search['pr'] EQ 1 ? 'checked' : '' "  name="search[pr]" class="auth_member"  value="1"/> <span>Tiêu biểu</span> <br/>
                     <input type="checkbox" tal:attributes="checked php:search['highline'] EQ 1 ? 'checked' : '' " name="search[highline]" class="auth_member"  value="1"/> <span>Nổi bật</span> <br/>
                 </td>
             </tr>
@@ -34,15 +36,15 @@
 </form>
 
 <form method="post" action="./" name="form">
-    <p class="centering txtWarning" >Không tồn tại dự án.</p>
+    <p class="centering txtWarning" tal:condition="nodata">Không tồn tại dự án.</p>
     <div class="mBoxitem_table">
         <div class="mBoxitem_listinfo">
-            <p class="pageList_data"><strong>Số lượng dự án：</strong>3</p>
+            <p class="pageList_data"><strong>Số lượng dự án：</strong>${count}</p>
         </div>
 
         <div class="mBoxitem_listinfo">
-            <!--<div tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>10),true)"></div>-->
-            <ul class="pageList_link">
+            <div tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)"></div>
+            <ul class="pageList_link" tal:replace="">
                 <li><a href="javascript:void(0);">≪</a></li>
                 <li><a href="javascript:void(0);">&lt;</a></li>
                 <li><a href="javascript:void(0);">1</a></li>
@@ -60,82 +62,21 @@
                 <tr>
                     <th>Tiêu đề</th>
                     <th class="thYokoM">Trạng thái</th>
-                    <th class="thYokoM">Dự án nổi bật</th>
+                    <th class="thYokoM">Loại dự án</th>
                     <th class="thYokoM">Dự án tiêu biểu</th>
                     <th class="thYokoM">Ngày đăng</th>
                     <th></th>
                 </tr>
             </thead>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td >2</td>
-                <td>3</td>
-                <td ><span >2012/04/13 23:00</span></td>
-                <td><span >2012/04/13 23:00</span></td>
+            <tr tal:repeat="item items">
+                <td tal:content="item/title|''"></td>
+                <td tal:content="item/sub_title|default"></td>
+                <td >
+                    <span tal:condition="php:item['pr'] EQ 1">Tiêu biểu</span>
+                    <span tal:condition="php:item['highline'] EQ 1">Nổi bật</span>
+                </td>
+                <td><span tal:condition="exists:item/modified" tal:content="dateformat:item/created">2012/04/13 23:00</span></td>
+                <td><span tal:condition="exists:item/modified" tal:content="dateformat:item/modified">2012/04/13 23:00</span></td>
                 <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=3" class="btnTable themeNormal">Chi tiết</a></td>
             </tr>
         </table>

@@ -2,11 +2,85 @@
 
 class DefaultController extends Controller
 {
+	const SESS_KEY = '_PROJECT';
 	public function actionIndex()
 	{
-		$search['title'] = $search['status'] = $search['pr'] = $search['highline'] =  '';
+		$this->forward('search');
+	}
+
+	public function actionSearch(){
 		$this->title='Manager Project | CMS An Thanh';
-		$this->render('index',compact('search'));
+
+		$search['title'] = $search['status'] = $search['highline'] =  '';
+		$search['pr'] = '';
+
+		$session = Yii::app()->session;
+
+		if(isset($_POST['search']))
+		{
+
+			if($session->contains(self::SESS_KEY))
+				$session->remove(self::SESS_KEY);
+
+			$data['search'] = $_POST['search'];
+			$data['page'] = 1;
+			$session->add(self::SESS_KEY, $data);
+		}
+
+		$c = new CDbCriteria();
+		$c->alias = "t";
+		$c->together = true;
+
+		if(isset($session[self::SESS_KEY]['search']))
+		{
+
+			$search = $session[self::SESS_KEY]['search'];
+			foreach($search as $k => $v)
+			{
+				if(!isset($v) || $v === '')
+				{
+					continue;
+				}
+				switch($k)
+				{
+					case 'title':
+						$c->compare($k, $v, false,'AND');
+						break;
+					case 'status':
+						$c->compare($k, $v, false,'AND');
+						break;
+					case 'pr':
+						$c->compare($k, $v, false,'AND');
+						break;
+				}
+			}
+		}
+
+		$search['pr'] = isset($search['pr']) ? $search['pr'] : null;
+		$search['highline'] = isset($search['highline']) ? $search['highline'] : null;
+
+		$sess_data = $session[self::SESS_KEY];
+		if(isset($_GET['page']))
+			$page = $sess_data['page'] = $_GET['page'];
+
+		else
+			$page = $sess_data['page'] = 1;
+		$session->add(self::SESS_KEY,$sess_data);
+
+		$c->select = 't.*';
+		$c->group = 't.id';
+		$c->order = 't.id DESC';
+		$count = ContentProjects::model()->count($c);
+
+		$nodata = ($count)?false:true;
+		$c->limit = 1;
+		$c->offset = $c->limit * ($page-1);
+		$items = ContentProjects::model()->findAll($c);
+
+		$pages = new CPagination($count);
+		$pages->pageSize = $c->limit;
+		$pages->applyLimit($c);
+		$this->render('index',compact('items','count','pages','search','nodata'));
 	}
 
 	public function actionView(){
