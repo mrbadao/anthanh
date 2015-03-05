@@ -69,8 +69,8 @@
                 </tr>
             </thead>
             <tr tal:repeat="item items">
-                <td tal:content="item/title|''"></td>
-                <td tal:content="item/sub_title|default"></td>
+                <td tal:content="structure php:Helpers::getNumChars(item['title'], 15)"></td>
+                <td tal:content="structure php:Helpers::getNumChars(item['sub_title'], 10)"></td>
                 <td >
                     <span tal:condition="php:item['pr'] EQ 1">Tiêu biểu</span>
                     <span tal:condition="php:item['highline'] EQ 1">Nổi bật</span>

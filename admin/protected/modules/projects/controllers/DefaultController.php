@@ -3,6 +3,12 @@
 class DefaultController extends Controller
 {
 	const SESS_KEY = '_PROJECT';
+
+	public function beforeAction(){
+		Helpers::checkAccessRule(array(), array('1'));
+		return true;
+	}
+
 	public function actionIndex()
 	{
 		$this->forward('search');
@@ -44,7 +50,7 @@ class DefaultController extends Controller
 				switch($k)
 				{
 					case 'title':
-						$c->compare($k, $v, false,'AND');
+						$c->compare($k, $v, true,'AND');
 						break;
 					case 'status':
 						$c->compare($k, $v, false,'AND');
@@ -73,7 +79,7 @@ class DefaultController extends Controller
 		$count = ContentProjects::model()->count($c);
 
 		$nodata = ($count)?false:true;
-		$c->limit = 1;
+		$c->limit = 10;
 		$c->offset = $c->limit * ($page-1);
 		$items = ContentProjects::model()->findAll($c);
 
@@ -118,6 +124,7 @@ class DefaultController extends Controller
 			}
 			$contentProject->modified = date("Y-m-d H:m:i");
 			$contentProject->setAttributes($_POST['project']);
+			$contentProject->thumbnail = Helpers::getFirstImg($_POST['project']['detail']);
 			if($contentProject->validate()){
 				$contentProject->save(false);
 				$this->redirect(array('view','id' => $contentProject->id, 'msg' => true));

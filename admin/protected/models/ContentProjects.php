@@ -34,8 +34,8 @@ class ContentProjects extends CActiveRecord
 			array('title, sub_title', 'required'),
 			array('status, pr, highline', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
-			array('thumbnail', 'length', 'max'=>45),
-			array('detail, sub_title, created, modified', 'safe'),
+			array('thumbnail', 'length', 'max'=>128),
+			array('title, detail, sub_title, created, modified', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, title, sub_title, thumbnail, detail, status, pr, highline', 'safe', 'on'=>'search'),

@@ -2386,3 +2386,11 @@ Stack trace:
 REQUEST_URI=/site/fonts/glyphicons-halflings-regular.ttf
 HTTP_REFERER=http://anthanh.dev/site/css/bootstrap.min.css
 ---
+2015/03/05 23:58:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('logout')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/site/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/logout
+---

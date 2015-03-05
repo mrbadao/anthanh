@@ -4256,3 +4256,619 @@ REQUEST_URI=/admin/projects/search
 in /tmp/tpl_54f88024_index__O9I18fWwDhFKtVjDkuSuJw.php (72)
 in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php (675)
 in /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php (47)
+2015/03/05 23:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/05 23:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/05 23:42:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/widgets/Menu.php:14
+Stack trace:
+#0 /var/www/anthanh/framework/web/CBaseController.php(169): Menu->run()
+#1 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(80): CBaseController->widget('application.wid...', Array, true)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(83): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionSearch()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CController.php(747): CController->run('search')
+#12 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): CController->forward('search')
+#13 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#14 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#18 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#19 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/projects/
+---
+2015/03/05 23:43:40 [error] [exception.CException] exception 'CException' with message 'Menu and its behaviors do not have a method or closure named "redirect".' in /var/www/anthanh/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/anthanh/admin/protected/widgets/Menu.php(14): CComponent->__call('redirect', Array)
+#1 /var/www/anthanh/admin/protected/widgets/Menu.php(14): Menu->redirect('site/login')
+#2 /var/www/anthanh/framework/web/CBaseController.php(169): Menu->run()
+#3 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(80): CBaseController->widget('application.wid...', Array, true)
+#4 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#5 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#6 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#8 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(83): Controller->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionSearch()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CController.php(747): CController->run('search')
+#14 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): CController->forward('search')
+#15 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#16 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#18 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#20 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#21 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/admin/projects/
+---
+2015/03/05 23:53:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/widgets/Menu.php:14
+Stack trace:
+#0 /var/www/anthanh/framework/web/CBaseController.php(169): Menu->run()
+#1 /tmp/tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A.php(80): CBaseController->widget('application.wid...', Array, true)
+#2 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(675): tpl_54f4917d_main__rkBgA2f7czXD5ctj7SGQ8A(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/admin/protected/components/Controller.php(37): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(83): Controller->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionSearch()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CController.php(747): CController->run('search')
+#12 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): CController->forward('search')
+#13 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#14 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#18 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#19 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/projects/
+---
+2015/03/05 23:53:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/05 23:57:28 [error] [php] include(Helpers.php): failed to open stream: No such file or directory (/var/www/anthanh/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): spl_autoload_call()
+#1 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#2 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#3 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#5 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/05 23:58:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/vendors/Helpers.php:29
+Stack trace:
+#0 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): Helpers::checkAccessRule(0)
+#1 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#2 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#5 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#6 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/projects/
+---
+2015/03/05 23:58:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/05 23:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/05 23:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "projects/admin/site/logout".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/admin/...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/projects/admin/site/logout
+---
+2015/03/05 23:59:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/05 23:59:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/vendors/Helpers.php:29
+Stack trace:
+#0 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): Helpers::checkAccessRule(0)
+#1 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#2 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#5 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#6 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/site/index
+---
+2015/03/06 00:00:42 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:00:58 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:01:06 [error] [php] in_array() expects parameter 2 to be array, null given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:01:33 [error] [php] in_array() expects parameter 2 to be array, string given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:03:02 [error] [php] in_array() expects parameter 2 to be array, string given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:03:47 [error] [php] in_array() expects parameter 2 to be array, string given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:03:49 [error] [php] in_array() expects parameter 2 to be array, string given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:04:15 [error] [php] in_array() expects parameter 2 to be array, string given (/var/www/anthanh/admin/protected/vendors/Helpers.php:28)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (28)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (8)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:04:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/vendors/Helpers.php:29
+Stack trace:
+#0 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): Helpers::checkAccessRule(Array, Array)
+#1 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#2 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#5 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#6 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/projects/
+---
+2015/03/06 00:06:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/06 00:06:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/06 00:08:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền thực hiện hành động này.' in /var/www/anthanh/admin/protected/vendors/Helpers.php:30
+Stack trace:
+#0 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(8): Helpers::checkAccessRule(Array, Array)
+#1 /var/www/anthanh/framework/web/CController.php(306): DefaultController->beforeAction(Object(CInlineAction))
+#2 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#5 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#6 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/site/index
+---
+2015/03/06 00:13:19 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:13:19 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:14:15 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:14:15 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:16:17 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:16:17 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:17:06 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:17:06 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:17:23 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:17:23 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:18:30 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:18:30 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:18:53 [error] [php] Undefined index: src (/var/www/anthanh/admin/protected/vendors/Helpers.php:36)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit?id=3
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (36)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (127)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:19:07 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:19:07 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:23:09 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:23:09 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:23:09 [error] [php] Undefined offset: 1 (/var/www/anthanh/admin/protected/vendors/Helpers.php:36)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (36)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (127)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:23:56 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:23:56 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:24:40 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:24:40 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:24:52 [error] [php] Undefined offset: 1 (/var/www/anthanh/admin/protected/vendors/Helpers.php:37)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit?id=5
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (37)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (127)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:25:34 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:25:34 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:25:38 [error] [php] Undefined offset: 1 (/var/www/anthanh/admin/protected/vendors/Helpers.php:37)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#2 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#3 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#4 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/edit?id=5
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (37)
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (127)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:25:54 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:25:54 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:26:15 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:26:15 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:26:28 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:26:28 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:27:11 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:27:11 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:28:40 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:28:40 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:28:40 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "baseUrl".' in /var/www/anthanh/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/Helpers.php(37): CComponent->__call('baseUrl', Array)
+#1 /var/www/anthanh/admin/protected/vendors/Helpers.php(37): CHttpRequest->baseUrl()
+#2 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(127): Helpers::getFirstImg('<p>T???NG TH???...')
+#3 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionEdit()
+#4 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('edit')
+#8 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects/defaul...')
+#9 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/projects/edit?id=5
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=5
+---
+2015/03/06 00:30:17 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:30:17 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:30:50 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:30:50 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:31:33 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:31:33 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:33:24 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:33:24 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:43:46 [error] [exception.PHPTAL_TemplateException] From /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php:857
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#1 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#2 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#3 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#5 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(89): Controller->render('index', Array)
+#6 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionSearch()
+#7 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/anthanh/framework/web/CController.php(747): CController->run('search')
+#11 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(14): CController->forward('search')
+#12 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#13 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#15 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#17 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#18 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/projects/
+HTTP_REFERER=http://anthanh.dev/admin/projects/edit?id=5
+---
+2015/03/06 00:44:18 [error] [exception.PHPTAL_TemplateException] From /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php:857
+Stack trace:
+#0 /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#1 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#2 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(DefaultController), '/var/www/anthan...', Array, true)
+#3 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/admin/protected/components/Controller.php(29): CController->renderPartial('index', Array, true)
+#5 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(89): Controller->render('index', Array)
+#6 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionSearch()
+#7 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/anthanh/framework/web/CController.php(747): CController->run('search')
+#11 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(14): CController->forward('search')
+#12 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#13 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#15 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#17 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('projects')
+#18 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/projects/
+---
+2015/03/06 00:44:48 [error] [php] Missing argument 2 for Helpers::getNumChars(), called in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code on line 177 and defined (/var/www/anthanh/admin/protected/vendors/Helpers.php:40)
+Stack trace:
+#0 /var/www/anthanh/admin/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#1 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(869): DefaultController->renderFile()
+#3 /var/www/anthanh/admin/protected/components/Controller.php(29): DefaultController->renderPartial()
+#4 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(89): DefaultController->render()
+#5 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionSearch()
+#6 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#8 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#9 /var/www/anthanh/framework/web/CController.php(747): DefaultController->run()
+#10 /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php(14): DefaultController->forward()
+#11 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#12 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/anthanh/framework/web/CController.php(286): DefaultController->runAction()
+#14 /var/www/anthanh/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#15 /var/www/anthanh/framework/web/CWebApplication.php(282): DefaultController->run()
+#16 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/anthanh/admin/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/projects/
+in /var/www/anthanh/admin/protected/vendors/Helpers.php (40)
+in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code (177)
+in /var/www/anthanh/admin/protected/vendors/phptal/PHPTAL.php (675)
+2015/03/06 00:58:06 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:58:06 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:58:16 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:58:16 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:58:21 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/06 00:58:21 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (126)
+in /var/www/anthanh/admin/index.php (13)
