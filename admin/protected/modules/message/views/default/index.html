@@ -1,31 +1,19 @@
-<h1>Quản lí dự án</h1>
+<h1>Quản lí tin</h1>
 <article>
-    <p>Để tìm bài viết. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút Search.</p>
+    <p>Để tìm bài tin. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút Search.</p>
 </article>
 
-<form name="frmSearch" action="/admin/projects/search" method="post">
+<form name="frmSearch" action="/admin/message/search" method="post">
     <div class="mBoxitem_table">
         <table class="tableTate" cellspacing="0" cellpadding="0" border="0">
             <tr>
                 <th>Tiêu đề</th>
                 <td><input  value="${search/title|''}" name="search[title]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/></td>
             </tr>
-            <tr>
-                <th>Trạng thái</th>
+            <tr tal:condition="php: role EQ 1">
+                <th>Người đăng</th>
                 <td>
-                    <select name="search[status]">
-                        <option value=""> Hãy chọn giá trị</option>
-                        <option value="-1" tal:attributes="selected php:search['status'] == '-1' ? 'selected' : '' ">Đang tiến hành</option>
-                        <option value="1" tal:attributes="selected php:search['status'] == '1' ? 'selected' : '' ">Đã hoàn thành</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <th>Loại</th>
-                <td>
-                    <input type="checkbox" tal:attributes="checked php:search['pr'] EQ 1 ? 'checked' : '' "  name="search[pr]" class="auth_member"  value="1"/> <span>Tiêu biểu</span> <br/>
-                    <input type="checkbox" tal:attributes="checked php:search['highline'] EQ 1 ? 'checked' : '' " name="search[highline]" class="auth_member"  value="1"/> <span>Nổi bật</span> <br/>
+                    <input  value="${search/user_name|''}" name="search[user_name]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/>
                 </td>
             </tr>
         </table>
@@ -36,10 +24,10 @@
 </form>
 
 <form method="post" action="./" name="form">
-    <p class="centering txtWarning" tal:condition="nodata">Không tồn tại dự án.</p>
+    <p class="centering txtWarning" tal:condition="nodata">Không tồn tại tin.</p>
     <div class="mBoxitem_table">
         <div class="mBoxitem_listinfo">
-            <p class="pageList_data"><strong>Số lượng dự án：</strong>${count}</p>
+            <p class="pageList_data"><strong>Số lượng tin：</strong>${count}</p>
         </div>
 
         <div class="mBoxitem_listinfo">
@@ -61,26 +49,20 @@
             <thead>
                 <tr>
                     <th>Tiêu đề</th>
-                    <th class="thYokoM">Trạng thái</th>
-                    <th class="thYokoM">Loại dự án</th>
-                    <th class="thYokoM">Dự án tiêu biểu</th>
+                    <th class="thYokoM">Giá</th>
+                    <th class="thYokoM">Người đăng</th>
                     <th class="thYokoM">Ngày đăng</th>
+                    <th class="thYokoM">Ngày sữa</th>
                     <th></th>
                 </tr>
             </thead>
             <tr tal:repeat="item items">
                 <td tal:content="structure php:Helpers::getNumChars(item['title'], 15)"></td>
-                <td >
-                    <span tal:condition="php:item['status'] EQ -1">Đang tiến hành</span>
-                    <span tal:condition="php:item['status'] EQ 1">Đã hoàn thành</span>
-                </td>
-                <td>
-                    <span tal:condition="php:item['pr'] EQ 1">Tiêu biểu, </span>
-                    <span tal:condition="php:item['highline'] EQ 1">Nổi bật</span>
-                </td>
+                <td tal:content="item/price"></td>
+                <td tal:content="user_name"></td>
                 <td><span tal:condition="exists:item/modified" tal:content="dateformat:item/created">2012/04/13 23:00</span></td>
                 <td><span tal:condition="exists:item/modified" tal:content="dateformat:item/modified">2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/projects/view?id=${item/id}" class="btnTable themeNormal">Chi tiết</a></td>
+                <td class="tdYoko_btn_s1"><a href="/admin/message/view?id=${item/id}" class="btnTable themeNormal">Chi tiết</a></td>
             </tr>
         </table>
     </div>

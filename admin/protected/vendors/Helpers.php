@@ -15,6 +15,17 @@ class Helpers {
     /**
      * 
      */
+    public static function getRole(){
+        $id = Yii::app()->user->id;
+        if(!isset($id))
+            Yii::app()->request->redirect('/admin/site/logout');
+        $staff = User::model()->findByPk($id);
+        if(!isset($staff))
+            Yii::app()->request->redirect('/admin/site/logout');
+
+        return $staff->is_super;
+    }
+
     public static function checkAccessRule($options = null, $param = null){
         $errMes = 'Bạn không có quyền thực hiện hành động này.';
         $id = Yii::app()->user->id;
