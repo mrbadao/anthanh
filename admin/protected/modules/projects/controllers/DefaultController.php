@@ -58,6 +58,9 @@ class DefaultController extends Controller
 					case 'pr':
 						$c->compare($k, $v, false,'AND');
 						break;
+					case 'highline':
+						$c->compare($k, $v, false,'AND');
+						break;
 				}
 			}
 		}

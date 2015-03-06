@@ -61,8 +61,8 @@
 
     <div class="subBox" style="margin-top: 20px;">
         <h3>Trạng thái</h3>
-        <div  class="optionsHolder" tal:condition="php: contentProject['status'] EQ 1" >Đang tiến hành</div>
-        <div  class="optionsHolder" tal:condition="php: contentProject['status'] EQ 0" >Đã hoàn thành</div>
+        <div  class="optionsHolder" tal:condition="php: contentProject['status'] EQ -1" >Đang tiến hành</div>
+        <div  class="optionsHolder" tal:condition="php: contentProject['status'] EQ 1" >Đã hoàn thành</div>
 
         <h3>Loại dự án</h3>
         <div class="optionsHolder">

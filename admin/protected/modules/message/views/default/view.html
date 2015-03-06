@@ -1,0 +1,104 @@
+<h1>Chi tiết dự án</h1>
+<article>
+    <p>
+        Đây là thông tin chi tiết của bài tin. Nếu bạn muốn chỉnh sửa các nội dung, vui lòng bấm vào nút [Edit]. <br />
+        Xin bấm vào nút [Delete] nếu bạn muốn xóa.
+    </p>
+</article>
+<div class="messageBox">
+    <p class="txtWarning">
+        <strong tal:condition="msg">Thao tác hoàn thành</strong>
+    </p>
+</div>
+
+<div class="columnContainer">
+
+    <div class="tabBox">
+        <form action="edit" method="get" name="article">
+            <input type="hidden" name="id" value="${contentMessage/id}"/>
+            <div class="mBoxitem_table">
+                <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                    <tr>
+                        <th>Tiêu đề</th>
+                        <td tal:content="contentMessage/title|''" id="title"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Vị trí</th>
+                        <td tal:content="contentMessage/location|''">
+                            <!--<img alt="thumbnail" src="${contentMessage/thumbnail|''}" style="width: 200px;"/>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Giá</th>
+                        <td tal:content="contentMessage/price|''">
+                            <!--<img alt="thumbnail" src="${contentMessage/thumbnail|''}" style="width: 200px;"/>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Diện tích</th>
+                        <td tal:content="contentMessage/square|''">
+                            <!--<img alt="thumbnail" src="${contentMessage/thumbnail|''}" style="width: 200px;"/>-->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Diện tích sữ  dụng</th>
+                        <td tal:content="contentMessage/use_square|''">
+                            <!--<img alt="thumbnail" src="${contentMessage/thumbnail|''}" style="width: 200px;"/>-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mBoxitem_table">
+                <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                    <tr >
+                        <th>Chi tiết</th>
+                        <td>
+                            <div  tal:content=" structure contentMessage/detail|''" class="fitImage"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mBoxitem_table">
+                <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                    <tr >
+                        <th>Ngày đăng</th>
+                        <td tal:content="contentMessage/created|''"></td>
+                    </tr>
+                    <tr >
+                        <th>Ngày sữa</th>
+                        <td tal:content="contentMessage/modified|''"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="subBox" style="margin-top: 20px;">
+        <h3>Thumbnail</h3>
+        <div  class="optionsHolder" ><img alt="thumbnail" src="${contentMessage/thumbnail|''}" style="width: 200px;"/></div>
+        <!--<div  class="optionsHolder" tal:condition="php: contentProject['status'] EQ 1" >Đã hoàn thành</div>-->
+
+        <!--<h3>Loại dự án</h3>-->
+        <!--<div class="optionsHolder">-->
+            <!--<div tal:condition="php: contentProject['pr'] EQ 1">Tiêu biểu</div>-->
+            <!--<div tal:condition="php: contentProject['highline'] EQ 1" >Nổi bật</div>-->
+        <!--</div>-->
+    </div>
+
+</div>
+
+<div class="BtnArea">
+    <div class="BtnAreaitem">
+        <input class="btnMiddle themeNormal" type="submit" title="Delete" value="Delete" onclick="location.href='/admin/message/delete?id=${contentMessage/id}';"/>
+    </div>
+    <div class="BtnAreaitem">
+        <input class="btnMiddle themeNormal" type="submit" title="Edit" value="Edit" onclick="location.href='/admin/message/edit?id=${contentMessage/id}';" />
+    </div>
+</div>

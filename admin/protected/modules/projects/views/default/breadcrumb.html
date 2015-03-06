@@ -21,8 +21,9 @@
 <nav id="topicPath" metal:define-macro="edit">
     <ul>
         <li class="top"><a href="/admin/">Home</a></li>
-        <li ><a href="/admin/project/">Danh sách dự án</a></li>
+        <li ><a href="/admin/projects/">Danh sách dự án</a></li>
         <li tal:condition="exists:contentProject/id"><a  href="/admin/project/view?id=${contentProject/id}">Chi tiết</a></li>
+        <li tal:condition="exists:contentProject/id">Chỉnh sữa dự án</li>
         <li tal:condition="not: exists:contentProject/id">Thêm mới dự án</li>
     </ul>
 </nav>

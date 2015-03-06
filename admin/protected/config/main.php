@@ -33,6 +33,7 @@ return array(
 		),
 
 		'projects',
+		'message',
 
 	),
 
