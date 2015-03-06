@@ -85,7 +85,7 @@
         <div class="optionsHolder">
             <div tab="belongTo_box1">
                 <input type="hidden" tal:condition="php: contentMessage['thumbnail'] NE null" name="message[thumbnail]" value="${contentMessage/thumbnail}"/>
-                <img alt="thumbnail" tal:condition="php: contentMessage['thumbnail'] NE null" src="${contentMessage/thumbnail}" style="width: 200px;"/>
+                <img alt="thumbnail"  src="${contentMessage/thumbnail|'http://anthanh.dev/upload/images/no_img.jpg'}" style="width: 200px;"/>
                 <!--<select name="project[status]"   style="width: 100%">-->
                     <!--<option value="-1" tal:attributes="selected php:contentProject['status'] EQ '-1' ? 'selected' : '' ">Đang tiến hành</option>-->
                     <!--<option value="1" tal:attributes="selected php:contentProject['status'] EQ '1' ? 'selected' : '' ">Đã hoàn thành</option>-->
