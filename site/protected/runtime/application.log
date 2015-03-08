@@ -3049,3 +3049,134 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/site/content/view?cat=4&id=7
 ---
+2015/03/08 13:10:49 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'items' in current scope' in /var/www/anthanh/site/protected/views/content/index.html:4
+Stack trace:
+#0 /tmp/tpl_54fbdef4_index__YG3uWoUwu9phClrGwnadfg.php(14): PHPTAL_Context->__get('items')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbdef4_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(155): CController->render('index')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionAbout()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('about')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/about')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/content/about
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 13:27:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cgii".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('cgii')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/site/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/cgii
+---
+2015/03/08 15:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "recruitment".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('recruitment')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('recruitment')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/recruit...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/site/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/content/recruitment
+HTTP_REFERER=http://anthanh.dev/site/
+---
+2015/03/08 16:12:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "recruitment".' in /var/www/anthanh/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(270): CController->missingAction('recruitment')
+#1 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('recruitment')
+#2 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/recruit...')
+#3 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/anthanh/site/index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/content/recruitment
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 16:15:52 [error] [exception.CException] exception 'CException' with message 'Property "ContentRecruitment.user" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(161): CComponent->__set('user', Object(User))
+#1 /var/www/anthanh/site/protected/controllers/ContentController.php(146): CActiveRecord->__set('user', Object(User))
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionRecruitment()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('recruitment')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/recruit...')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/site/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/content/recruitment
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 16:16:18 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ContentRecruitment object doesn't have method/property named 'thumbnail'' in /var/www/anthanh/site/protected/views/content/project.html:9
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php(408): PHPTAL_Context::pathError(Object(ContentRecruitment), 'thumbnail', 'thumbnail')
+#1 /tmp/tpl_54fbe64f_project__NDyfS5Nw2_TaCAHUxu_E_A.php(37): PHPTAL_Context::path(Object(ContentRecruitment), 'thumbnail')
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbe64f_project__NDyfS5Nw2_TaCAHUxu_E_A(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('project', Array, true)
+#7 /var/www/anthanh/site/protected/controllers/ContentController.php(153): CController->render('project', Array)
+#8 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionRecruitment()
+#9 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('recruitment')
+#13 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/recruit...')
+#14 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/anthanh/site/index.php(12): CApplication->run()
+#16 {main}
+REQUEST_URI=/site/content/recruitment
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 16:16:47 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'item' in current scope' in /var/www/anthanh/site/protected/views/content/recruitment.html:1
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(8): PHPTAL_Context->__get('item')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fc1345_recruitment__VgRoTB16aD7N2viDOU7DtA(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('recruitment', Array, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(153): CController->render('recruitment', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionRecruitment()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('recruitment')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/recruit...')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/content/recruitment
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 16:42:07 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'items' in current scope' in /var/www/anthanh/site/protected/views/content/viewrecruitment.html:4
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(15): PHPTAL_Context->__get('items')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fc164d_viewrecruitment__yGhQY4Ji3ySnDuKjlYPWBg(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewrecruitment', Array, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(144): CController->render('viewrecruitment', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/content/view?cat=5&id=13
+HTTP_REFERER=http://anthanh.dev/site/content/recruitment
+---

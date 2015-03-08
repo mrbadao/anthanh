@@ -1,0 +1,9 @@
+<tal:block tal:condition="php: item NE null">
+    <div class="news-mess row">
+        <h2 class="home-title" style="margin-left: 25px;">${item/title|''}</h2>
+    </div>
+
+    <div class="news-mess-detail">
+        <tal:block tal:content="structure item/detail"></tal:block>
+    </div>
+</tal:block>

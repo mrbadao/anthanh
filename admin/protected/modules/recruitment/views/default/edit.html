@@ -1,0 +1,60 @@
+<div tal:replace="structure php:CHtml::statefulForm('','post',array('id'=>'article'))"/>
+
+
+<div tal:condition="not:exists:contentProject/id">
+    <h1>Thêm tin tuyển dụng</h1>
+    <article>
+        <p>
+            Tin tuyển dụng sẽ được thêm.<br/>
+            Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
+        </p>
+    </article>
+</div>
+<div tal:condition="exists:contentProject/id">
+    <h1>Chỉnh sữa dự án</h1>
+    <article>
+        <p>
+            Tin tuyển dụng được chỉnh sữa<br/>
+            Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
+        </p>
+    </article>
+</div>
+<aside>
+    <p>※<span class="txtWarning">*</span>Hãy nhập đầy đủ thông tin.</p>
+</aside>
+
+<div class="columnContainer">
+    <div class="tabBox">
+        <input type="hidden" name="recruitment[id]" value="${contentRecruitment/id|''}"/>
+        <input type="hidden" name="recruitment[content_categories_id]" value="5"/>
+
+        <div class="mBoxitem_table">
+            <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                <tr>
+                    <th>Tiêu đề&nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentRecruitment,'title')"/>
+                        <input type="text" name="recruitment[title]" maxlength="100" value="${contentRecruitment/title|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <th>Nội dung</th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentRecruitment,'detail')"/>
+                        <textarea name="recruitment[detail]" cols="" rows="6" id="input_detail_en" class="txt_bigbox ckeditor txt_en">${contentRecruitment/detail|''}</textarea>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div class="BtnArea">
+    <div class="BtnAreaitem">
+        <tal:block class="BtnAreaitem" tal:content="structure php:CHtml::submitButton('Save',array('name' => 'commit','class'=>'btnMiddle themeNormal'))"/>
+        <input class="btnMiddle themeNormal" type="button" title="Cancel" value="Cancel" onclick="javascript:cancel_edit(${contentRecruitment/id|''});"/>
+    </div>
+</div>

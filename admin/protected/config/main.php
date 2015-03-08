@@ -34,6 +34,7 @@ return array(
 
 		'projects',
 		'message',
+		'recruitment',
 
 	),
 

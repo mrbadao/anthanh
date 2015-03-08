@@ -123,9 +123,53 @@ class ContentController extends Controller
 					$user = User::model()->findByPk($item->user_id);
 				}
 				break;
+			case 5:
+				$view = 'viewrecruitment';
+
+				$item = ContentRecruitment::model()->findByPk($id);
+
+				if($item){
+					$this->setTitle($item->title);
+					$this->breadcrumbs = array(
+						'Tuyển dụng' =>array('/content/recruitment/'),
+						Helpers::getNumChars($item->title,14),
+					);
+
+					$user = User::model()->findByPk($item->user_id);
+				}
+				break;
+
 
 		}
+
+		if($item == null) $this->redirect('index');
+
 		$this->render($view, compact('item', 'user'));
+	}
+
+	public function actionRecruitment(){
+		$this->setTitle('Tuyển dụng');
+		$page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+		$c = new CDbCriteria();
+		$c->order ='id DESC';
+		$c->select ='t.*';
+		$count = ContentRecruitment::model()->count($c);
+
+		$c->limit = 12;
+		$c->offset = $c->limit * ($page - 1);
+		$items = ContentRecruitment::model()->findAll($c);
+
+		foreach($items as $item){
+			$user = User::model()->findByPk($item->user_id);
+			$item->user = $user;
+		}
+
+		$pages = new CPagination($count);
+		$pages->pageSize = $c->limit;
+		$pages->applyLimit($c);
+
+		$this->render('recruitment', compact('items', 'pages'));
 	}
 
 	/**

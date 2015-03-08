@@ -2,10 +2,10 @@
 
 class DefaultController extends Controller
 {
-	const SESS_KEY = '_MESSAGE';
+	const SESS_KEY = '_RECRUITMENT';
 
 	public function beforeAction(){
-		Helpers::checkAccessRule(array(), array('1', '0'));
+		Helpers::checkAccessRule(array(), array('1'));
 		return true;
 	}
 
@@ -17,6 +17,7 @@ class DefaultController extends Controller
 	public function actionSearch(){
 		$this->title='Manager Message | CMS An Thanh';
 		$role = Helpers::getRole();
+
 		$search['title'] = $search['user_name'] = '';
 
 		$session = Yii::app()->session;
@@ -34,9 +35,6 @@ class DefaultController extends Controller
 
 		$c = new CDbCriteria();
 		$c->alias = "t";
-		if($role != 1){
-			$c->addCondition('user_id = '.Yii::app()->user->getId(), 'AND');
-		}
 
 		$c->join = 'JOIN user as u on t.user_id = u.id';
 		$c->together = true;
@@ -74,12 +72,12 @@ class DefaultController extends Controller
 		$c->select = 't.*';
 		$c->group = 't.id';
 		$c->order = 't.id DESC';
-		$count = ContentMessage::model()->count($c);
+		$count = ContentRecruitment::model()->count($c);
 
 		$nodata = ($count)?false:true;
 		$c->limit = 10;
 		$c->offset = $c->limit * ($page-1);
-		$items = ContentMessage::model()->findAll($c);
+		$items = ContentRecruitment::model()->findAll($c);
 		$pages = new CPagination($count);
 		$pages->pageSize = $c->limit;
 		$pages->applyLimit($c);
@@ -93,52 +91,48 @@ class DefaultController extends Controller
 			$this->redirect(array('index'));
 		}
 
-		$contentMessage = ContentMessage::model()->findByPk($id);
+		$contentRecruitment = ContentRecruitment::model()->findByPk($id);
 
-		if($contentMessage == null) $this->redirect(array('index'));
+		if($contentRecruitment == null) $this->redirect(array('index'));
 
-		$this->title='View Message | CMS An Thanh';
+		$this->title='View Recruitment | CMS An Thanh';
 
 		$msg = isset($_GET['msg']) ? true : false;
-		$this->render('view',compact('msg','contentMessage'));
+		$this->render('view',compact('msg','contentRecruitment'));
 	}
 
 	public function actionEdit(){
-
 		$this->widget('CkEditor');
-		$this->title='Add Message | CMS An Thanh';
-		$contentMessage = null;
+		$this->title='Add Recruitment | CMS An Thanh';
+		$contentRecruitment = null;
 
 		$id = isset($_GET['id']) ? $_GET['id'] : null;
 
 		if($id != null){
-			$contentMessage = ContentMessage::model()->findByPk($id);
+			$contentRecruitment = ContentRecruitment::model()->findByPk($id);
 		}
 
-		if($contentMessage == null) $contentMessage = new ContentMessage();
+		if($contentRecruitment == null) $contentRecruitment = new ContentRecruitment();
 
-		if(isset($_POST['message'])){
-			if($contentMessage->getIsNewRecord()){
-				$contentMessage->created = date("Y-m-d H:m:i");
+		if(isset($_POST['recruitment'])){
+			if($contentRecruitment->getIsNewRecord()){
+				$contentRecruitment->created = date("Y-m-d H:m:i");
 			}
-			$contentMessage->modified = date("Y-m-d H:m:i");
-			$contentMessage->setAttributes($_POST['message']);
-			$contentMessage->user_id = Yii::app()->user->getId();
-			$contentMessage->thumbnail = Helpers::getFirstImg($_POST['message']['detail']);
-			if($contentMessage->validate()){
-				$contentMessage->save(false);
-				$this->redirect(array('view','id' => $contentMessage->id, 'msg' => true));
+			$contentRecruitment->modified = date("Y-m-d H:m:i");
+			$contentRecruitment->setAttributes($_POST['recruitment']);
+			if($contentRecruitment->validate()){
+				$contentRecruitment->save(false);
+				$this->redirect(array('view','id' => $contentRecruitment->id, 'msg' => true));
 			}
-
 		}
 
-		$this->render('edit',compact('contentMessage'));
+		$this->render('edit',compact('contentRecruitment'));
 	}
 
 	public function actionDelete(){
 		$id = isset($_GET['id']) ? $_GET['id'] : null;
 		if($id!=null){
-			ContentMessage::model()->deleteByPk($id);
+			ContentRecruitment::model()->deleteByPk($id);
 		}
 		$this->redirect(array('index'));
 	}

@@ -4,7 +4,7 @@
 <tal:block tal:condition="php: items NE null">
     <div class="top-news" style="height: 145px;" tal:repeat="item items">
         <div class="top-item" >
-            <h2 class="text-left"><a href="/site/content/view?cat=4&id=${item/id}">${item/title}</a></h2>
+            <h2 class="text-left"><a href="/site/content/view?cat=4&id=${item/id}" tal:content="structure php:Helpers::getNumChars(item['title'], 8)">${item/title}</a></h2>
             <div class="top-img">
                 <a href="/site/content/view?cat=1&id=1"><img src="${item/thumbnail}" alt=""/></a>
             </div>
@@ -13,9 +13,10 @@
                 <tal:block tal:content="structure php:Helpers::getNumChars(item['detail'], 20)"/>
             </div>
         </div>
-        <div class="paging">
-            <tal:block tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)"/>
-        </div>
+    </div>
+
+    <div class="paging">
+        <tal:block tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)"/>
     </div>
 </tal:block>
 
