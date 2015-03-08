@@ -1,153 +1,24 @@
 <div>
     <h2 class="home-title" style="margin-left: 15px;">sàn giao dịch</h2>
 </div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a href="content/view">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="content/view"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
+<tal:block tal:condition="php: items NE null">
+    <div class="top-news" tal:repeat="item items">
+        <div class="top-item">
+            <h2 class="text-left"><a href="/site/content/view?cat=3&id=${item/id}" tal:content="structure php:Helpers::getNumChars(item['title'], 8)">${item/title}</a></h2>
+            <div class="top-img">
+                <a href="/site/content/view?cat=3&id=${item/id}"><img src="${item/thumbnail}" alt=""/></a>
+            </div>
+            <div class="top-info">
+                <h3 style="height:17px; width: 252px; overflow: hidden;"> Đăng bởi <span style="color: #ff0000;">${item/user/name}</span> ${item/created}</h3>
+                <p tal:content="structure php:Helpers::getNumChars(item['detail'], 20)">Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
+                <h4>Vị trí: ${item/location|''}</h4>
+                <h4>Giá: <span>${item/price|''}</span> - TDT: <span>${item/square|''}</span></h4>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
+    
+    <div class="paging">
+        <tal:block tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)"/>
     </div>
-</div>
+</tal:block>
 
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>
-
-<div class="top-news">
-    <div class="top-item">
-        <h2 class="text-left"><a>Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-            <h4>Vị trí: Quận 2 - Hồ Chí Minh</h4>
-            <h4>Giá: <span>1.3 tỷ/m2</span> - TDT: <span>100 m2</span></h4>
-        </div>
-    </div>
-</div>

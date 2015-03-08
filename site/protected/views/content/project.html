@@ -1,160 +1,21 @@
 <div>
     <h2 class="home-title" style="margin-left: 15px;">Dự án</h2>
 </div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/site/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/site/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
+<tal:block tal:condition="php: items NE null">
+    <div class="top-news" style="height: 145px;" tal:repeat="item items">
+        <div class="top-item" >
+            <h2 class="text-left"><a href="/site/content/view?cat=4&id=${item/id}">${item/title}</a></h2>
+            <div class="top-img">
+                <a href="/site/content/view?cat=1&id=1"><img src="${item/thumbnail}" alt=""/></a>
+            </div>
+            <div class="top-info">
+                <h3 style="height:17px; width: 252px; overflow: hidden;"> Đăng bởi <span style="color: #ff0000;">${item/user/name}</span> ${item/created}</h3>
+                <tal:block tal:content="structure php:Helpers::getNumChars(item['detail'], 20)"/>
+            </div>
         </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
+        <div class="paging">
+            <tal:block tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)"/>
         </div>
     </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="/content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
-
-<div class="top-news" style="height: 145px;">
-    <div class="top-item">
-        <h2 class="text-left"><a href="content/view?cat=1&id=1">Diamond Island căn hộ đẳng cấp </a></h2>
-        <div class="top-img">
-            <a href="/content/view?cat=1&id=1"><img src="${params/siteUrl}/images/upload/3088081.jpg" alt=""/></a>
-        </div>
-        <div class="top-info">
-            <h3> Đăng bởi admin lúc 18-12-2014</h3>
-            <p>Giao nhà thô hoặc giao nhà hoàn thiện cơ bản hoặc giao nhà hoàn thiện đầy đủ Tùy theo nhu cầu của khách hàng</p>
-        </div>
-    </div>
-</div>
+</tal:block>
 

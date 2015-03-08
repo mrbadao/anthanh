@@ -5402,3 +5402,75 @@ Stack trace:
 REQUEST_URI=/admin/message/search
 HTTP_REFERER=http://anthanh.dev/admin/message/search
 ---
+2015/03/08 10:06:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/08 10:07:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/08 10:22:13 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:23:33 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:26:26 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:26:55 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:27:14 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:27:44 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:27:56 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:28:08 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:28:38 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 10:29:01 [warning] [application] Failed to set unsafe attribute "id" of "ContentMessage".
+in /var/www/anthanh/admin/protected/modules/message/controllers/DefaultController.php (125)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 11:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---
+2015/03/08 12:10:26 [warning] [application] Failed to set unsafe attribute "id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (129)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 12:10:26 [warning] [application] Failed to set unsafe attribute "content_categories_id" of "ContentProjects".
+in /var/www/anthanh/admin/protected/modules/projects/controllers/DefaultController.php (129)
+in /var/www/anthanh/admin/index.php (13)
+2015/03/08 13:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "img/bg_texture.png".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('img/bg_texture....')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/admin/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/img/bg_texture.png
+HTTP_REFERER=http://anthanh.dev/admin/css/style.css
+---

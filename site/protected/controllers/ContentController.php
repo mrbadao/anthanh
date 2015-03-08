@@ -30,34 +30,102 @@ class ContentController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
+		$page = isset($_GET['page']) ? $_GET['page'] : 1;
+
 		$this->setTitle('Trang Chủ');
-		$this->render('index');
+		$c = new CDbCriteria();
+		$c->order ='id DESC';
+		$c->select ='t.*';
+		$count = ContentMessage::model()->count($c);
+
+		$c->limit = 12;
+		$c->offset = $c->limit * ($page - 1);
+		$items = ContentMessage::model()->findAll($c);
+
+		foreach($items as $item){
+			$user = User::model()->findByPk($item->user_id);
+			$item->user = $user;
+		}
+
+		$pages = new CPagination($count);
+		$pages->pageSize = $c->limit;
+		$pages->applyLimit($c);
+
+		$this->render('index', compact('items', 'pages'));
 	}
 
 	public function actionProject()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
 		$this->setTitle('Dự án');
-		$this->render('project');
+		$page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+		$c = new CDbCriteria();
+		$c->order ='id DESC';
+		$c->select ='t.*';
+		$count = ContentProjects::model()->count($c);
+
+		$c->limit = 12;
+		$c->offset = $c->limit * ($page - 1);
+		$items = ContentProjects::model()->findAll($c);
+
+		foreach($items as $item){
+			$user = User::model()->findByPk($item->user_id);
+			$item->user = $user;
+		}
+
+		$pages = new CPagination($count);
+		$pages->pageSize = $c->limit;
+		$pages->applyLimit($c);
+
+		$this->render('project', compact('items', 'pages'));
 	}
 
 
 	public function actionView(){
 		$id = isset($_GET['id']) ? $_GET['id'] : null;
 		$cat = isset($_GET['cat']) ? $_GET['cat'] : null;
-		$view = '';
-		if($cat == 1){
-			$view = 'viewnew';
+
+		$view = 'viewnew';
+		$item= null;
+		$user = '';
+
+		$c = new CDbCriteria();
+		$c->alias ='t';
+		switch($cat){
+			case 3:
+				$view = 'viewnew';
+
+				$item = ContentMessage::model()->findByPk($id);
+
+				if($item){
+					$this->setTitle($item->title);
+					$this->breadcrumbs = array(
+						'Sàn giao dịch' =>array('/content/'),
+						Helpers::getNumChars($item->title,14),
+					);
+
+					$user = User::model()->findByPk($item->user_id);
+				}
+
+				break;
+
+			case 4:
+				$view = 'viewproject';
+				$item = ContentProjects::model()->findByPk($id);
+
+				if($item){
+					$this->setTitle($item->title);
+					$this->breadcrumbs = array(
+						'Dự án' =>array('/content/project/'),
+						Helpers::getNumChars($item->title,14),
+					);
+
+					$user = User::model()->findByPk($item->user_id);
+				}
+				break;
+
 		}
-		else {
-			$view = 'viewproject';
-		}
-		$this->setTitle('Sàn giao dịch');
-		$this->breadcrumbs = array(
-			'Sàn giao dịch',
-		);
-		$this->render($view);
+		$this->render($view, compact('item', 'user'));
 	}
 
 	/**

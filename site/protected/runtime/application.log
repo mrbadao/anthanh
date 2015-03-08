@@ -2394,3 +2394,658 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/site/logout
 ---
+2015/03/08 09:48:55 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'items' in current scope' in /var/www/anthanh/site/protected/views/content/index.html:4
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(15): PHPTAL_Context->__get('items')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbb896_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 09:58:21 [error] [exception.PHPTAL_TemplateException] From /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php:857
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#1 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#2 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#3 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index', Array)
+#6 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#7 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#11 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /var/www/anthanh/site/index.php(12): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 10:03:18 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.sub_Etitle" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('sub_Etitle')
+#1 /var/www/anthanh/framework/base/CModel.php(596): CActiveRecord->__get('sub_Etitle')
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(48): CModel->offsetGet('sub_Etitle')
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbbbf6_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#4 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#5 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/site/index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 10:03:45 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.sub_Etitle" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('sub_Etitle')
+#1 /var/www/anthanh/framework/base/CModel.php(596): CActiveRecord->__get('sub_Etitle')
+#2 /tmp/tpl_54fbbbf6_index__YG3uWoUwu9phClrGwnadfg.php(47): CModel->offsetGet('sub_Etitle')
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbbbf6_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#4 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#5 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/site/index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 10:03:52 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.sub_Etitle" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('sub_Etitle')
+#1 /var/www/anthanh/framework/base/CModel.php(596): CActiveRecord->__get('sub_Etitle')
+#2 /tmp/tpl_54fbbbf6_index__YG3uWoUwu9phClrGwnadfg.php(47): CModel->offsetGet('sub_Etitle')
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbbbf6_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#4 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#5 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/site/index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 10:09:06 [error] [exception.CException] exception 'CException' with message 'Property "ContentMessage.sub_title" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('sub_title')
+#1 /var/www/anthanh/framework/base/CModel.php(596): CActiveRecord->__get('sub_title')
+#2 /tmp/tpl_54fbbc9d_index__YG3uWoUwu9phClrGwnadfg.php(47): CModel->offsetGet('sub_title')
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbbc9d_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#4 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#5 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#7 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index', Array)
+#9 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#10 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/anthanh/site/index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 10:14:13 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ContentMessage object doesn't have method/property named 'thubnail'' in /var/www/anthanh/site/protected/views/content/index.html:9
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php(408): PHPTAL_Context::pathError(Object(ContentMessage), 'thubnail', 'thubnail')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(39): PHPTAL_Context::path(Object(ContentMessage), 'thubnail')
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbbe82_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#7 /var/www/anthanh/site/protected/controllers/ContentController.php(39): CController->render('index', Array)
+#8 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#9 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#13 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/anthanh/site/index.php(12): CApplication->run()
+#16 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 10:34:01 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'pages' in current scope' in /var/www/anthanh/site/protected/views/content/index.html:17
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(62): PHPTAL_Context->__get('pages')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbc27e_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(43): CController->render('index', Array)
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/
+---
+2015/03/08 11:24:44 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'item' in current scope' in /var/www/anthanh/site/protected/views/content/viewnew.html:1
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(8): PHPTAL_Context->__get('item')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbcf0a_viewnew__f8CmwqCXPZa0_wRgFq2_8A(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewnew', NULL, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(84): CController->render('viewnew')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/content/view?cat=3&id=20
+HTTP_REFERER=http://anthanh.dev/site/content/index
+---
+2015/03/08 11:25:02 [error] [php] Object of class ContentMessage could not be converted to string (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php:494)
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbcf0a_viewnew__f8CmwqCXPZa0_wRgFq2_8A()
+#1 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#2 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#3 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#4 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#5 /var/www/anthanh/site/protected/controllers/ContentController.php(84): ContentController->render()
+#6 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#7 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#9 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#10 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#11 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/view?cat=3&id=20
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php (494)
+in /tmp/tpl_54fbcf0a_viewnew__f8CmwqCXPZa0_wRgFq2_8A.php (13)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+2015/03/08 11:25:37 [error] [php] Object of class ContentMessage could not be converted to string (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php:490)
+Stack trace:
+#0 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#1 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#3 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#4 /var/www/anthanh/site/protected/controllers/ContentController.php(84): ContentController->render()
+#5 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#6 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#8 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#10 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/view?cat=3&id=20
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php (490)
+in /tmp/tpl_54fbcf0a_viewnew__f8CmwqCXPZa0_wRgFq2_8A.php (13)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+2015/03/08 11:26:25 [error] [php] Object of class ContentMessage could not be converted to string (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php:490)
+Stack trace:
+#0 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#1 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#3 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#4 /var/www/anthanh/site/protected/controllers/ContentController.php(84): ContentController->render()
+#5 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#6 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#8 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#10 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/view?cat=3&id=20
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php (490)
+in /tmp/tpl_54fbcf0a_viewnew__f8CmwqCXPZa0_wRgFq2_8A.php (13)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+2015/03/08 11:26:45 [error] [php] Object of class ContentMessage could not be converted to string (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php:490)
+Stack trace:
+#0 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#1 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#3 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#4 /var/www/anthanh/site/protected/controllers/ContentController.php(85): ContentController->render()
+#5 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#6 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#8 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#10 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/view?cat=3&id=20
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php (490)
+in /tmp/tpl_54fbcf0a_viewnew__f8CmwqCXPZa0_wRgFq2_8A.php (13)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+2015/03/08 11:30:02 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: '${item/detai', expected variable name. Complex expressions need php: modifier.' in /var/www/anthanh/site/protected/views/content/viewnew.html:21
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detai', true)
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detai', true)
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detai', true)
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(151): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detai', true)
+#4 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detai|''...', false)
+#5 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detai|''...', false)
+#6 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detai|''...', false)
+#7 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detai|''...', false)
+#8 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('${item/detai|''...')
+#9 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Content.php(40): PHPTAL_Php_CodeWriter->evaluateExpression('${item/detai|''...')
+#10 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(399): PHPTAL_Php_Attribute_TAL_Content->before(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54fbd049_vi...', Object(PHPTAL_Dom_Element))
+#20 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#21 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#22 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#23 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#24 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#25 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewnew', Array, true)
+#26 /var/www/anthanh/site/protected/controllers/ContentController.php(85): CController->render('viewnew', Array)
+#27 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#28 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#29 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#30 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#32 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#33 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#34 /var/www/anthanh/site/index.php(12): CApplication->run()
+#35 {main}
+REQUEST_URI=/site/content/view?cat=3&id=20
+HTTP_REFERER=http://anthanh.dev/site/content/index
+---
+2015/03/08 11:30:19 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: '${item/detai'', expected variable name. Complex expressions need php: modifier.' in /var/www/anthanh/site/protected/views/content/viewnew.html:21
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detai'', true)
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detai'', true)
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detai'', true)
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(151): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detai'', true)
+#4 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detai'|'...', false)
+#5 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detai'|'...', false)
+#6 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detai'|'...', false)
+#7 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detai'|'...', false)
+#8 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('${item/detai'|'...')
+#9 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Content.php(40): PHPTAL_Php_CodeWriter->evaluateExpression('${item/detai'|'...')
+#10 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(399): PHPTAL_Php_Attribute_TAL_Content->before(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54fbd05a_vi...', Object(PHPTAL_Dom_Element))
+#20 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#21 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#22 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#23 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#24 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#25 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewnew', Array, true)
+#26 /var/www/anthanh/site/protected/controllers/ContentController.php(85): CController->render('viewnew', Array)
+#27 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#28 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#29 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#30 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#32 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#33 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#34 /var/www/anthanh/site/index.php(12): CApplication->run()
+#35 {main}
+REQUEST_URI=/site/content/view?cat=3&id=20
+HTTP_REFERER=http://anthanh.dev/site/content/index
+---
+2015/03/08 11:30:24 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: '${item/detai', expected variable name. Complex expressions need php: modifier.' in /var/www/anthanh/site/protected/views/content/viewnew.html:21
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detai', true)
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detai', true)
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detai', true)
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(151): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detai', true)
+#4 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detai|''...', false)
+#5 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detai|''...', false)
+#6 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detai|''...', false)
+#7 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detai|''...', false)
+#8 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('${item/detai|''...')
+#9 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Content.php(40): PHPTAL_Php_CodeWriter->evaluateExpression('${item/detai|''...')
+#10 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(399): PHPTAL_Php_Attribute_TAL_Content->before(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54fbd05f_vi...', Object(PHPTAL_Dom_Element))
+#20 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#21 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#22 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#23 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#24 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#25 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewnew', Array, true)
+#26 /var/www/anthanh/site/protected/controllers/ContentController.php(85): CController->render('viewnew', Array)
+#27 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#28 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#29 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#30 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#32 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#33 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#34 /var/www/anthanh/site/index.php(12): CApplication->run()
+#35 {main}
+REQUEST_URI=/site/content/view?cat=3&id=20
+HTTP_REFERER=http://anthanh.dev/site/content/index
+---
+2015/03/08 11:30:33 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: '${item/detail', expected variable name. Complex expressions need php: modifier.' in /var/www/anthanh/site/protected/views/content/viewnew.html:21
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detail', true)
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detail', true)
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detail', true)
+#3 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(151): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detail', true)
+#4 [internal function]: PHPTAL_Php_TalesInternal::path('${item/detail|'...', false)
+#5 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(480): call_user_func(Array, '${item/detail|'...', false)
+#6 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', '${item/detail|'...', false)
+#7 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('${item/detail|'...', false)
+#8 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('${item/detail|'...')
+#9 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/Attribute/TAL/Content.php(40): PHPTAL_Php_CodeWriter->evaluateExpression('${item/detail|'...')
+#10 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(399): PHPTAL_Php_Attribute_TAL_Content->before(Object(PHPTAL_Php_CodeWriter))
+#11 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Dom/Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Php/CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_54fbd068_vi...', Object(PHPTAL_Dom_Element))
+#20 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(834): PHPTAL->parse()
+#21 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#22 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#23 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#24 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#25 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewnew', Array, true)
+#26 /var/www/anthanh/site/protected/controllers/ContentController.php(85): CController->render('viewnew', Array)
+#27 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#28 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#29 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#30 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#31 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#32 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#33 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#34 /var/www/anthanh/site/index.php(12): CApplication->run()
+#35 {main}
+REQUEST_URI=/site/content/view?cat=3&id=20
+HTTP_REFERER=http://anthanh.dev/site/content/index
+---
+2015/03/08 11:40:15 [error] [php] Wrong parameter count for number_format() (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code:87)
+Stack trace:
+#0 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#1 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#3 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#4 /var/www/anthanh/site/protected/controllers/ContentController.php(89): ContentController->render()
+#5 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#6 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#8 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#10 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/view?cat=3&id=1
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code (87)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+in /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php (47)
+2015/03/08 11:42:01 [error] [php] number_format() expects parameter 2 to be long, string given (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code:87)
+Stack trace:
+#0 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#1 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#3 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#4 /var/www/anthanh/site/protected/controllers/ContentController.php(89): ContentController->render()
+#5 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#6 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#8 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#10 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/view?cat=3&id=1
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code (87)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+in /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php (47)
+2015/03/08 11:42:16 [error] [exception.PHPTAL_TemplateException] From /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php:857
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(667): PHPTAL->prepare()
+#1 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#2 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#3 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#4 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewnew', Array, true)
+#5 /var/www/anthanh/site/protected/controllers/ContentController.php(89): CController->render('viewnew', Array)
+#6 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#7 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#11 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#12 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /var/www/anthanh/site/index.php(12): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/content/view?cat=3&id=1
+HTTP_REFERER=http://anthanh.dev/site/content/index?page=2
+---
+2015/03/08 11:44:40 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'items' in current scope' in /var/www/anthanh/site/protected/views/content/index.html:4
+Stack trace:
+#0 /tmp/tpl_54fbcbe5_index__YG3uWoUwu9phClrGwnadfg.php(14): PHPTAL_Context->__get('items')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbcbe5_index__YG3uWoUwu9phClrGwnadfg(Object(PHPTAL), Object(PHPTAL_Context))
+#2 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#3 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', NULL, true)
+#4 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', NULL, true)
+#5 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /var/www/anthanh/site/protected/controllers/ContentController.php(116): CController->render('index')
+#7 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionAbout()
+#8 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('about')
+#12 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/about')
+#13 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/anthanh/site/index.php(12): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/content/about
+HTTP_REFERER=http://anthanh.dev/site/
+---
+2015/03/08 11:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/content/view/cat/3/id/20".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('site/content/vi...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/site/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/site/content/view/cat/3/id/20
+HTTP_REFERER=http://anthanh.dev/site/content/view?cat=3&id=20
+---
+2015/03/08 11:57:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/content/view/cat/3/id/20".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('site/content/vi...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/site/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/site/content/view/cat/3/id/20
+HTTP_REFERER=http://anthanh.dev/site/content/view?cat=3&id=20
+---
+2015/03/08 11:57:59 [error] [exception.CException] exception 'CException' with message 'ContentController cannot find the requested view "".' in /var/www/anthanh/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('', Array, true)
+#1 /var/www/anthanh/site/protected/controllers/ContentController.php(109): CController->render('', Array)
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/site/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/content/view
+---
+2015/03/08 11:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/content/view".' in /var/www/anthanh/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('site/content/vi...')
+#1 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/anthanh/site/index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/site/content/view?cat=3&id=20
+HTTP_REFERER=http://anthanh.dev/site/content/view?cat=3&id=20
+---
+2015/03/08 12:04:25 [error] [php] Array to string conversion (/var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code:15)
+Stack trace:
+#0 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile()
+#1 /var/www/anthanh/framework/web/CController.php(869): ContentController->renderFile()
+#2 /var/www/anthanh/framework/web/CController.php(782): ContentController->renderPartial()
+#3 /var/www/anthanh/site/protected/controllers/ContentController.php(73): ContentController->render()
+#4 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionProject()
+#5 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/anthanh/framework/web/CController.php(286): ContentController->runAction()
+#7 /var/www/anthanh/framework/web/CController.php(265): ContentController->runActionWithFilters()
+#8 /var/www/anthanh/framework/web/CWebApplication.php(282): ContentController->run()
+#9 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/anthanh/site/index.php(12): CWebApplication->run()
+REQUEST_URI=/site/content/project
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code (15)
+in /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php (675)
+in /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php (47)
+2015/03/08 12:22:33 [error] [exception.CException] exception 'CException' with message 'Property "ContentMessage.user" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(161): CComponent->__set('user', Object(User))
+#1 /var/www/anthanh/site/protected/controllers/ContentController.php(47): CActiveRecord->__set('user', Object(User))
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionIndex()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/site/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 12:54:59 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.user_id" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('user_id')
+#1 /var/www/anthanh/site/protected/controllers/ContentController.php(118): CActiveRecord->__get('user_id')
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/site/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/content/view?cat=4&id=7
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 12:55:54 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.user_id" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('user_id')
+#1 /var/www/anthanh/site/protected/controllers/ContentController.php(118): CActiveRecord->__get('user_id')
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/site/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/content/view?cat=4&id=7
+HTTP_REFERER=http://anthanh.dev/site/content/project
+---
+2015/03/08 12:55:56 [error] [exception.CException] exception 'CException' with message 'Property "ContentProjects.user_id" is not defined.' in /var/www/anthanh/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/anthanh/framework/db/ar/CActiveRecord.php(145): CComponent->__get('user_id')
+#1 /var/www/anthanh/site/protected/controllers/ContentController.php(118): CActiveRecord->__get('user_id')
+#2 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#3 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#8 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/anthanh/site/index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/content/view?cat=4&id=7
+---
+2015/03/08 12:58:15 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ContentProjects object doesn't have method/property named 'title'''' in /var/www/anthanh/site/protected/views/content/viewproject.html:3
+Stack trace:
+#0 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL/Context.php(408): PHPTAL_Context::pathError(Object(ContentProjects), 'title''', 'title''')
+#1 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(845) : eval()'d code(14): PHPTAL_Context::path(Object(ContentProjects), 'title''')
+#2 /var/www/anthanh/site/protected/vendors/phptal/PHPTAL.php(675): tpl_54fbe4f7_viewproject__MJSKA51EJ3owfADiIS6S_g(Object(PHPTAL), Object(PHPTAL_Context))
+#3 /var/www/anthanh/site/protected/extensions/PHPTALViewRenderer.php(47): PHPTAL->execute()
+#4 /var/www/anthanh/framework/web/CBaseController.php(93): PHPTALViewRenderer->renderFile(Object(ContentController), '/var/www/anthan...', Array, true)
+#5 /var/www/anthanh/framework/web/CController.php(869): CBaseController->renderFile('/var/www/anthan...', Array, true)
+#6 /var/www/anthanh/framework/web/CController.php(782): CController->renderPartial('viewproject', Array, true)
+#7 /var/www/anthanh/site/protected/controllers/ContentController.php(123): CController->render('viewproject', Array)
+#8 /var/www/anthanh/framework/web/actions/CInlineAction.php(49): ContentController->actionView()
+#9 /var/www/anthanh/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/anthanh/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/anthanh/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/anthanh/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/anthanh/framework/web/CWebApplication.php(141): CWebApplication->runController('content/view')
+#14 /var/www/anthanh/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/anthanh/site/index.php(12): CApplication->run()
+#16 {main}
+REQUEST_URI=/site/content/view?cat=4&id=7
+---
