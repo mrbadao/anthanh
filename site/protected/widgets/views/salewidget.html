@@ -1,0 +1,12 @@
+<div id="slide-footer" tal:condition="php: projects != null">
+    <h2 class="home-title" style="margin-left: 25px;">Dự án đang bán</h2>
+    <div id="carousel">
+        <div class="item-slide" tal:repeat="project projects">
+            <a href="/site/content/view?cat=4&id=${project/id}"><img src="${project/thumbnail}" alt="${project/title}"/></a>
+            <h3 tal:content="structure php:Helpers::getNumChars(project['title'],8)">Căn hộ The Vista An Phú</h3>
+            <p tal:content="structure php: Helpers::getNumChars(project['detail'],15)">
+                Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
+            </p>
+        </div>
+    </div>
+</div>

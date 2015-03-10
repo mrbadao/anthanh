@@ -35,6 +35,8 @@ return array(
 		'projects',
 		'message',
 		'recruitment',
+		'player',
+		'setting',
 
 	),
 

@@ -1,0 +1,14 @@
+<div class="box-item-sidebar" style="top: 20px;" tal:condition="php: projects != null">
+    <div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Dự án  nổi bật</h3></div>
+    <div class="content" style="clear: both;" tal:repeat="project projects">
+        <div class="news-name" >
+            <a href="/site/content/view?cat=4&id=${project/id}" title="${project/title}"><tal:block tal:content="structure php:Helpers::getNumChars(project['title'],12)"/></a>
+        </div>
+        <div class="news-image">
+            <a href="/site/content/view?cat=4&id=${project/id}"><img src="${project/thumbnail}" class="img-responsive" alt="${project/title}" style="width: 105px; height: 79px;"/></a>
+        </div>
+        <div class="news-desc" tal:content="structure php: Helpers::getNumChars(project['detail'],20)"></div>
+
+    </div>
+
+</div>

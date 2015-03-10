@@ -28,7 +28,6 @@
 </style>
 <body>
 <div class="container" id="page" style="padding: 0;">
-
     <div id="header">
         <!--div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div-->
         <img src="${params/siteUrl}/images/site/logo.png" alt="Logo" style="width: 100%;"/>
@@ -85,33 +84,7 @@
             </div>
             <!--news-->
 
-
-
-            <div class="project-place">
-                <div class="title-global icon"><h3>Dự án tiêu biểu</h3></div>
-                <div class="content">
-                    <div id='coin-slider'>
-                        <a href="${params/siteUrl}/images/upload/3088083.jpg">
-                            <img src='${params/siteUrl}/images/upload/08835070_400x300.jpg' style="width: 300px; height: 150px;"/>
-                            <span>
-                                CĂN HỘ VISTA VERDE
-                            </span>
-                        </a>
-                        <a href="imgN_url">
-                            <img src='${params/siteUrl}/images/upload/81818169_400x300.jpg' style="width: 300px; height: 150px;"/>
-                            <span>
-                                BÁN CĂN HỘ VISTA VERDE QUẬN 2
-                            </span>
-                        </a>
-                        <a href="imgN_url">
-                            <img src='${params/siteUrl}/images/upload/82902775_400x300.jpg' style="width: 300px; height: 150px;"/>
-                            <span>
-                                BÁN CĂN HÔ THE ASCENT
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <tal:block tal:content="structure php:this.widget('PresentProjectWidget',array(),true)"/>
 
         </div>
 
@@ -131,45 +104,7 @@
                 </div>
             </div>
 
-            <div class="box-item-sidebar" style="top: 20px;">
-                <div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Dự án  nổi bật</h3></div>
-                <div class="content" style="clear: both;">
-                    <div class="news-name">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong năm tháng cuối năm">Bất động sản có hy vọng trong năm tháng cuối năm</a>
-                    </div>
-                    <div class="news-image">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong 5 tháng cuối năm"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" class="img-responsive" alt="Bất động sản có hy vọng trong 5 tháng cuối năm"/></a>
-                    </div>
-                    <div class="news-desc">
-                        Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...					</div>
-
-                </div>
-
-                <div class="content" style="clear: both;">
-                    <div class="news-name">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong năm tháng cuối năm">Bất động sản có hy vọng trong năm tháng cuối năm</a>
-                    </div>
-                    <div class="news-image">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong 5 tháng cuối năm"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" class="img-responsive" alt="Bất động sản có hy vọng trong 5 tháng cuối năm"/></a>
-                    </div>
-                    <div class="news-desc">
-                        Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...					</div>
-
-                </div>
-
-                <div class="content" style="clear: both;">
-                    <div class="news-name">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong năm tháng cuối năm">Bất động sản có hy vọng trong năm tháng cuối năm</a>
-                    </div>
-                    <div class="news-image">
-                        <a href="tin-tuc/169/bat-dong-san-co-hy-vong-trong-5-thang-cuoi-nam.html" title="Bất động sản có hy vọng trong 5 tháng cuối năm"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" class="img-responsive" alt="Bất động sản có hy vọng trong 5 tháng cuối năm"/></a>
-                    </div>
-                    <div class="news-desc">
-                        Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...Theo các chuyên gia, vẫn có tia hy vọng cho bất động sản những tháng cuối năm nhất là ...					</div>
-
-                </div>
-
-            </div>
+            <tal:block tal:content="structure php:this.widget('HighlineProjectWidget',array(),true)"/>
 
             <div class="box-item-sidebar" style="clear: both; top: 50px; ">
                 <!--<div class="title-global icon"><img src="${params/siteUrl}/images/site/new.gif"/><h3>Hỗ trợ trực tuyến</h3></div>-->
@@ -187,46 +122,7 @@
         </div>
     </div>
 
-    <div id="slide-footer">
-        <h2 class="home-title" style="margin-left: 25px;">Dự án đang bán</h2>
-        <div id="carousel">
-            <div class="item-slide">
-                <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
-                <h3>Căn hộ The Vista An Phú</h3>
-                <p>
-                    Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
-                </p>
-            </div>
-            <div class="item-slide">
-                <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
-                <h3>Căn hộ The Vista An Phú</h3>
-                <p>
-                    Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
-                </p>
-            </div>
-            <div class="item-slide">
-                <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
-                <h3>Căn hộ The Vista An Phú</h3>
-                <p>
-                    Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
-                </p>
-            </div>
-<!--            <div class="item-slide">
-                <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
-                <h3>Căn hộ The Vista An Phú</h3>
-                <p>
-                    Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
-                </p>
-            </div>
-            <div class="item-slide">
-                <a href="#"><img src="${params/siteUrl}/images/upload/08835070_400x300.jpg" /></a>
-                <h3>Căn hộ The Vista An Phú</h3>
-                <p>
-                    Vị trí: Xa Lộ Hà Nội, An Phú- Quận 2 - TP. Hồ Chí Minh
-                </p>
-            </div>-->
-        </div>
-    </div>
+    <tal:block tal:content="structure php:this.widget('SaleProjectWidget',array(),true)"/>
 
     <div class="clear"></div>
 
@@ -303,6 +199,5 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="${params/siteUrl}/js/bootstrap.min.js"></script>
-
 </body>
 </html>

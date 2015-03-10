@@ -584,6 +584,10 @@ div.search-form
 	clear: both;
 }
 
+.news-mess-detail h1, .news-mess-detail h2, .news-mess-detail h3, .news-mess-detail h4, .news-mess-detail h5, .news-mess-detail h6{
+	margin-left: 10px;
+}
+
 .news-mess-header{
 	margin-top: 15px;
 }

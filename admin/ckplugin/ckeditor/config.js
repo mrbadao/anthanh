@@ -11,24 +11,13 @@ CKEDITOR.editorConfig = function( config ) {
     // xoa cac nut ko can thiet
     config.toolbar =
         [
-            //['Source','-','Save','NewPage','Preview','-','Templates'],
-            //['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
-            //['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
-            //['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
-//'/',
-        ['Bold'],['Italic'],['Underline'],['Strike'],['-'],
-        //'Subscript','Superscript'
+            ['Bold'],['Italic'],['Underline'],['Strike'],['-'],
+            //'Subscript','Superscript'
 
-        ['TextColor'],['Link'],['Image'],['Table'],['CustomImage'],
-        //['Styles','Format','Font','FontSize'],
-        //['Maximize', 'ShowBlocks','-','About'],
+            ['TextColor'],['Link'],['Image'],['Table'],['CustomImage'],
 
-        ['NumberedList'],['BulletedList'],['Blockquote'],
-        ['JustifyLeft'],['JustifyCenter'],['JustifyRight']
-
-
-        //['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe'],
-        //    '/',
+            ['NumberedList'],['BulletedList'],['Blockquote'],
+            ['JustifyLeft'],['JustifyCenter'],['JustifyRight']
     ];
 
     config.filebrowserBrowseUrl = '/ckplugin/ckfinder/ckfinder.html';

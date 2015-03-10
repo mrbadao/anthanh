@@ -38,11 +38,13 @@
                     </td>
                 </tr>
                 <tr>
+                <tr>
                     <th>Nội dung</th>
                     <td>
                         <tal:block tal:content="structure php:CHtml::error(contentRecruitment,'detail')"/>
                         <textarea name="recruitment[detail]" cols="" rows="6" id="input_detail_en" class="txt_bigbox ckeditor txt_en">${contentRecruitment/detail|''}</textarea>
                     </td>
+                </tr>
                 </tr>
             </table>
         </div>

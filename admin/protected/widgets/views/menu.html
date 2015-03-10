@@ -25,9 +25,16 @@
 <section tal:condition="php: user['is_super'] EQ 1">
     <h2>Quản lí tài khoản</h2>
     <ul>
-        <li><a href="/video">Danh sách user</a></li>
-        <li><a href="/video">Profile</a></li>
-        <li><a href="/video/upload">Đổi mật khẩu</a></li>
+        <li><a href="/admin/user/">Danh sách user</a></li>
+        <li><a href="/admin/user/edit/">Thêm user</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Tài khoản</h2>
+    <ul>
+        <li><a href="/admin/player/">Profile</a></li>
+        <li><a href="/admin/player/changepwd">Đổi mật khẩu</a></li>
     </ul>
 </section>
 

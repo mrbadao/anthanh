@@ -1,0 +1,61 @@
+<div tal:replace="structure php:CHtml::statefulForm('','post',array('id'=>'article'))"/>
+
+<div tal:condition="exists:contentUser/id">
+    <h1>Đổi mật khẩu</h1>
+    <article>
+        <p>
+            Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
+        </p>
+    </article>
+</div>
+<aside>
+    <p>※<span class="txtWarning">*</span>Hãy nhập đầy đủ thông tin.</p>
+</aside>
+
+<div class="messageBox">
+    <p class="txtWarning">
+        <strong tal:condition="msg">Thao tác hoàn thành</strong>
+    </p>
+</div>
+
+<div class="columnContainer">
+    <div class="tabBox">
+        <input type="hidden" name="contentUser[id]" value="${contentUser/id|''}"/>
+
+        <div class="mBoxitem_table">
+            <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                <tr>
+                    <th>Mật khẩu hiện tại&nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentUser,'password')"/>
+                        <input type="password" name="user[password]" maxlength="100" value=""  class="txtbox title txt_en" style="width:300px;" id="title" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Mật khẩu mới&nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentUser,'new_pwd')"/>
+                        <input type="password" name="new_pwd" maxlength="100" value="${edit/new_pwd|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Xác nhận&nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentUser,'confirm_pwd')"/>
+                        <input type="password" name="confirm_pwd" maxlength="100" value="${edit/confirm_pwd|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div class="BtnArea">
+    <div class="BtnAreaitem">
+        <tal:block class="BtnAreaitem" tal:content="structure php:CHtml::submitButton('Save',array('name' => 'commit','class'=>'btnMiddle themeNormal'))"/>
+        <input class="btnMiddle themeNormal" type="button" title="Cancel" value="Cancel" onclick="window.location.href='/admin/';"/>
+    </div>
+</div>

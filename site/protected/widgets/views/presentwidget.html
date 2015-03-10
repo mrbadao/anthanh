@@ -1,0 +1,13 @@
+<div class="project-place" tal:condition="php: projects != null">
+    <div class="title-global icon"><h3>Dự án tiêu biểu</h3></div>
+    <div class="content">
+        <div id='coin-slider' tal:repeat="project projects">
+            <a href="/site/content/view?cat=4&id=${project/id}">
+                <img src='${project/thumbnail}' style="width: 300px; height: 150px;"/>
+                            <span tal:content="structure php:Helpers::getNumChars(project['title'],8)">
+                                CĂN HỘ VISTA VERDE
+                            </span>
+            </a>
+        </div>
+    </div>
+</div>
