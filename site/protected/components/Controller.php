@@ -10,6 +10,7 @@ class Controller extends CController
 	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
 	 */
 	public $layout='//layouts/column1';
+	public $site_setting = null;
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */
@@ -23,6 +24,9 @@ class Controller extends CController
 		foreach($categories as $category){
 			$this->menu['items'][] = array('label'=>$category->title, 'url'=> array($category->abbr_cd));
 		}
+
+		$this->site_setting = ContentSetting::model()->findByPk('1');
+
 		//$this->viewPath = substr($viewPath,strpos($viewPath,'/protected'));
 //            $this->action = $this->action->id;
 //            Helpers::setSessionSiteId(1);
