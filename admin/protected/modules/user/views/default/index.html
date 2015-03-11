@@ -1,20 +1,22 @@
-<h1>Quản lí tin tuyển dụng</h1>
+<h1>Quản lí tin user</h1>
 <article>
-    <p>Để tìm bài tin. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút Search.</p>
+    <p>Để tìm user. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút Search.</p>
 </article>
 
-<form name="frmSearch" action="/admin/recruitment/search" method="post">
+<form name="frmSearch" action="/admin/user/search" method="post">
     <div class="mBoxitem_table">
         <table class="tableTate" cellspacing="0" cellpadding="0" border="0">
             <tr>
-                <th>Tiêu đề</th>
-                <td><input  value="${search/title|''}" name="search[title]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/></td>
+                <th>Login ID</th>
+                <td><input  value="${search/loginid|''}" name="search[loginid]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/></td>
             </tr>
-            <tr tal:condition="php: role EQ 1">
-                <th>Người đăng</th>
-                <td>
-                    <input  value="${search/user_name|''}" name="search[user_name]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/>
-                </td>
+            <tr>
+                <th>Tên hiển thị</th>
+                <td><input  value="${search/name|''}" name="search[name]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><input  value="${search/phone|''}" name="search[phone]" class="txtbox" type="text" onKeyDown="ignoreESC(this,event.keyCode)" onFocus="toggleColor(this)" onBlur="toggleColor(this)" style="width: 300px;"/></td>
             </tr>
         </table>
         <div class="BtnArea" style="text-align: center !important;">
@@ -24,10 +26,10 @@
 </form>
 
 <form method="post" action="./" name="form">
-    <p class="centering txtWarning" tal:condition="nodata">Không tồn tại tin.</p>
+    <p class="centering txtWarning" tal:condition="nodata">Không tồn user.</p>
     <div class="mBoxitem_table">
         <div class="mBoxitem_listinfo">
-            <p class="pageList_data"><strong>Số lượng tin：</strong>${count}</p>
+            <p class="pageList_data"><strong>Số lượng user：</strong>${count}</p>
         </div>
 
         <div class="mBoxitem_listinfo">
@@ -48,19 +50,21 @@
         <table cellpadding="0" cellspacing="0" border="0" class="tableYoko">
             <thead>
             <tr>
-                <th>Tiêu đề</th>
-                <th class="thYokoM">Người đăng</th>
+                <th>Login id</th>
+                <th class="thYokoM">Tên hiển thị</th>
+                <th class="thYokoM">Phone</th>
                 <th class="thYokoM">Ngày đăng</th>
                 <th class="thYokoM">Ngày sữa</th>
                 <th></th>
             </tr>
             </thead>
             <tr tal:repeat="item items">
-                <td tal:content="structure php:Helpers::getNumChars(item['title'], 15)"></td>
-                <td tal:content="user_name"></td>
+                <td tal:content="item/loginid"></td>
+                <td tal:content="item/name"></td>
+                <td tal:content="item/phone"></td>
                 <td><span tal:condition="exists:item/created" tal:content="dateformat:item/created">2012/04/13 23:00</span></td>
                 <td><span tal:condition="exists:item/modified" tal:content="dateformat:item/modified">2012/04/13 23:00</span></td>
-                <td class="tdYoko_btn_s1"><a href="/admin/recruitment/view?id=${item/id}" class="btnTable themeNormal">Chi tiết</a></td>
+                <td class="tdYoko_btn_s1"><a href="/admin/user/view?id=${item/id}" class="btnTable themeNormal">Chi tiết</a></td>
             </tr>
         </table>
     </div>

@@ -1,22 +1,26 @@
 <div tal:replace="structure php:CHtml::statefulForm('','post',array('id'=>'article'))"/>
 
 <div tal:condition="exists:contentUser/id">
-    <h1>Chỉnh sữa thông tin cá nhân</h1>
+    <h1>Sữa user</h1>
     <article>
         <p>
             Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
         </p>
     </article>
 </div>
+
+<div tal:condition="not: exists:contentUser/id">
+    <h1>Thêm user</h1>
+    <article>
+        <p>
+            Sau khi nhập các thông tin cần thiết, bạn hãy click vào nút Save.
+        </p>
+    </article>
+</div>
+
 <aside>
     <p>※<span class="txtWarning">*</span>Hãy nhập đầy đủ thông tin.</p>
 </aside>
-
-<div class="messageBox">
-    <p class="txtWarning">
-        <strong tal:condition="msg">Thao tác hoàn thành</strong>
-    </p>
-</div>
 
 <div class="columnContainer">
     <div class="tabBox">
@@ -25,10 +29,32 @@
         <div class="mBoxitem_table">
             <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
                 <tr>
+                    <th>Login Id&nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentUser,'loginid')"/>
+                        <input type="text" name="user[loginid]" maxlength="100" value="${contentUser/loginid|''}"  class="txtbox title txt_en" style="width:150px;" id="title" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Password &nbsp;<span class="txtWarning">*</span></th>
+                    <td>
+                        <tal:block tal:content="structure php:CHtml::error(contentUser,'password')"/>
+                        <input tal:condition="php: contentUser['id'] != null" disabled="disabled" type="password" name="user[password]" maxlength="100" value="${contentUser/password|''}"  class="txtbox title txt_en" style="width:150px;" id="pwd" />
+                        <input tal:condition="php: contentUser['id'] == null" type="password" name="user[password]" maxlength="100" value="${contentUser/password|''}"  class="txtbox title txt_en" style="width:150px;" id="pwd" />
+                        <a id="edit_pwd" href="javascript: void(0);" class="btn" tal:condition="php: contentUser['id'] != null">Set password</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="mBoxitem_table">
+            <table cellpadding="0" cellspacing="0" border="0" class="tableTate">
+                <tr>
                     <th>Tên hiển thị&nbsp;<span class="txtWarning">*</span></th>
                     <td>
                         <tal:block tal:content="structure php:CHtml::error(contentUser,'name')"/>
-                        <input type="text" name="user[name]" maxlength="100" value="${contentUser/name|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                        <input type="text" name="user[name]" maxlength="100" value="${contentUser/name|''}"  class="txtbox title txt_en" style="width:150px;" id="title" />
                     </td>
                 </tr>
 
@@ -36,7 +62,7 @@
                     <th>Phone&nbsp;<span class="txtWarning">*</span></th>
                     <td>
                         <tal:block tal:content="structure php:CHtml::error(contentUser,'phone')"/>
-                        <input type="text" name="user[phone]" maxlength="100" value="${contentUser/phone|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                        <input  type="text" name="user[phone]" maxlength="100" value="${contentUser/phone|''}"  class="txtbox title txt_en" style="width:150px;" id="title" />
                     </td>
                 </tr>
 
@@ -44,7 +70,7 @@
                     <th>email&nbsp;<span class="txtWarning">*</span></th>
                     <td>
                         <tal:block tal:content="structure php:CHtml::error(contentUser,'email')"/>
-                        <input type="text" name="user[email]" maxlength="100" value="${contentUser/email|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                        <input type="text" name="user[email]" maxlength="100" value="${contentUser/email|''}"  class="txtbox title txt_en" style="width:250px;" id="title" />
                     </td>
                 </tr>
 
@@ -53,6 +79,13 @@
                     <td>
                         <tal:block tal:content="structure php:CHtml::error(contentUser,'address')"/>
                         <input type="text" name="user[address]" maxlength="100" value="${contentUser/address|''}"  class="txtbox title txt_en" style="width:300px;" id="title" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Active user</th>
+                    <td>
+                        <input type="checkbox" name="user[is_active]" value="1" tal:attributes="checked php:contentUser['is_active'] == 1"/>
                     </td>
                 </tr>
 
@@ -68,3 +101,16 @@
         <input class="btnMiddle themeNormal" type="button" title="Cancel" value="Cancel" onclick="window.location.href='/admin/';"/>
     </div>
 </div>
+
+<script>
+    $('#edit_pwd').click(function(){
+        if($(this).text() != 'Uset password'){
+            $('#pwd').prop("disabled", false);
+            $(this).text('Uset password');
+        }
+        else{
+            $('#pwd').prop("disabled", true);
+            $(this).text('Set password');
+        }
+    });
+</script>

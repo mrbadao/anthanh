@@ -36,6 +36,7 @@ return array(
 		'message',
 		'recruitment',
 		'player',
+		'user',
 		'setting',
 
 	),

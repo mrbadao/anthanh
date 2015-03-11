@@ -41,12 +41,13 @@ class User extends CActiveRecord
 			array('password', 'checkPassword', 'on'=>'check_password'),
 			array('loginid', 'length', 'max'=>20),
 			array('password', 'length', 'max'=>128),
-			array('name, email', 'length', 'max'=>100),
+			array('name', 'length', 'max'=>32),
+			array('email', 'length', 'max'=>100),
 			array('phone', 'length', 'max'=>15),
-			array('created, modified, address, name', 'safe'),
+			array('created, modified, address, name, phone, email, is_active', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, loginid, password, name, is_super, phone, email, created, modified, address', 'safe', 'on'=>'search'),
+			array('id, loginid, password, name, is_super, phone, email, created, is_active, modified, address', 'safe', 'on'=>'search'),
 		);
 	}
 
